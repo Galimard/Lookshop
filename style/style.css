@@ -9,7 +9,7 @@
     font-weight: 400;
 }
 * {
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
 }
 .header {
     font-family: ArialMT, arial, sans-serif;
@@ -173,7 +173,6 @@
 }
 .customer-shoping__wrap-busket-info {
     height: 33px;
-    width: 212px;
     background-color: #fafafa;
     display: flex;
     flex-direction: row;
@@ -210,10 +209,13 @@
     border-right: 1px solid #949393;
 }
 .header-carousel {
-    /*padding: 0 calc((100% - 1200px) / 2);*/
     margin: 0 auto;
-    height: 440px;
     width: 1200px;
+}
+.header-carousel__wrap {
+    /*padding: 0 calc((100% - 1200px) / 2);*/
+    position: relative;
+    height: 440px;
     background: url("../img/background_header_carousel.png") center no-repeat;
 }
 .header-carousel__sign {
@@ -244,5 +246,53 @@
     font-family: ArialMT, arial, sans-serif;
     font-size: 16px;
     text-transform: uppercase;
+}
+.header-carousel__btn-arrow {
+    padding-left: 20px;
+}
+.header-carousel__prev {
+    position: absolute;
+    top: 162px;
+    left: 0;
+    display: block;
+    width: 30px;
+    height: 117px;
+    background: #ffffff url("../img/ico_carousel_prev.png") center no-repeat;
+    opacity: 0.9;
+}
+.header-carousel__next {
+    top: 162px;
+    right: 0;
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 117px;
+    background: #ffffff url("../img/ico_carousel_next.png") center no-repeat;
+    opacity: 0.9;
+}
+.header-carousel__decore-line {
+    position: absolute;
+    bottom: 0;
+    width: 791px;
+    height: 7px;
+    background-color: #000000;
+    opacity: 0.2;
+}
+.header-carousel__indicators {
+    padding: 32px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 130px;
+    margin: 0 auto;
+}
+.header-carousel__indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #867a76;
+    border-radius: 50%;
+}
+.header-carousel__indicator--active {
+    background-color: #fd926d;
 }
 
