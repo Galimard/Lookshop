@@ -8,3 +8,201 @@
     src: url("../fonts/Arial-BoldMT.woff2"), url("../fonts/Arial-BoldMT.woff") ;
     font-weight: 400;
 }
+.header {
+    font-family: ArialMT, arial, sans-serif;
+}
+.customer-info {
+    padding: 0 calc((100% - 970px) / 2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: -0.06px;
+    line-height: 30px;
+}
+.customer-info-change {
+    width: 235px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.change_currency {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70px;
+    border-left: 1px solid #444444;
+    text-align: center;
+}
+.change_currency__current-currency {
+    width: 45px;
+}
+.change_currency__currency-menu {
+    text-decoration: none;
+    display: block;
+    width: 25px;
+    color: #c1c1c1;
+    text-align: center;
+}
+.change_currency__currency-menu:hover {
+    outline: 1px solid #444444;
+}
+.customer-account {
+    border-left: 1px solid #444444;
+    border-right: 1px solid #444444;
+    width: 128px;
+}
+.customer-account__name{
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.customer-account__name::before {
+    display: block;
+    width: 14px;
+    height: 13px;
+    content: "";
+    background: url("../img/ico_contact_user.png") center no-repeat;
+}
+.customer-account__name:hover {
+    outline: 1px solid #444444;
+    /*color: #fd926d;*/
+    /*transition: 0.2s;*/
+}
+.search {
+    display: flex;
+    width: 34px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #444444;
+}
+.search:hover {
+    outline: 1px solid #444444;
+}
+.search__btn {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url("../img/ico_search.png") center no-repeat;
+}
+.navigation {
+    padding: 20px calc((100% - 970px) / 2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: ArialMT, arial, sans-serif;
+    align-items: center;
+}
+.logo_main {
+    text-decoration: none;
+    display: block;
+    width: 120px;
+    height: 28px;
+    background: url("../img/logo_main.png");
+}
+.top-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 435px;
+    font-size: 16px;
+    letter-spacing: -0.08px;
+}
+.top_menu__item {
+    text-decoration: none;
+    color: #000000;
+}
+.top_menu__item::after {
+    float: right;
+    display: block;
+    content: "";
+    width: 15px;
+    height: 18px;
+    background: url("../img/ico_nav_arrow_down.png") center no-repeat;
+}
+.top_menu__item:hover::after{
+    transform: rotateZ(-90deg);
+    transition: 0.3s;
+}
+.top_menu__item:hover {
+    color: #fd926d;
+    transition: 0.3s;
+}
+.customer-shoping {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 214px;
+    height: 66px;
+    border: 1px solid #d6d6d6;
+}
+.customer-shoping__choose-cart {
+    height: 33px;
+    border-bottom: 1px solid #d6d6d6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.customer-shoping__cart-name {
+    color: #949393;
+    font-size: 12px;
+    padding-left: 9px;
+    letter-spacing: -0.06px;
+}
+.customer-shoping__cart-choose-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 30px;
+    height: 100%;
+    color: #c1c1c1;
+}
+.customer-shoping__wrap-busket-info {
+    height: 33px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.customer-shoping__busket-ico {
+    padding-left: 9px;
+    display: block;
+    text-decoration: none;
+    height: 20px;
+    width: 20px;
+    background: url("../img/ico_busket.png") center no-repeat;
+}
+.customer-shoping__busket-info {
+    width: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: -0.06px;
+}
+.customer-shoping__busket-items, .customer-shoping__busket-price {
+    text-decoration: none;
+    color: #949393;
+}
+.customer-shoping__busket-price {
+    width: 20px;
+    padding-left: 4px;
+}
+.customer-shoping__busket-items {
+    width: 48px;
+    border-right: 1px solid #949393;
+}
+
