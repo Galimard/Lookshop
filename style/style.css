@@ -240,9 +240,6 @@ html, body {
     overflow: hidden;
 }
 
-.carousel-two, .carousel-three, .carousel-four {
-    display: none;
-}
 
 .menu-list {
     display: flex;
