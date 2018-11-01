@@ -130,6 +130,16 @@ html, body {
     align-items: center;
 }
 
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.menu-list__item {
+    list-style: none;
+}
+
 .subscribe {
     background-color:  #ededed;
 }
@@ -240,8 +250,7 @@ html, body {
     overflow: hidden;
 }
 
-
-.menu-list {
-    display: flex;
-    justify-content: space-between;
+.carousel-two, .carousel-three, .carousel-four {
+    display: none;
 }
+
