@@ -8,8 +8,124 @@
     src: url("../fonts/Arial-BoldMT.woff2"), url("../fonts/Arial-BoldMT.woff") ;
     font-weight: 400;
 }
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/arial.woff2') format('woff2');
+    src: url('../fonts/arial.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/arialbd.woff2') format('woff2');
+    src: url('../fonts/Arial-BoldMT.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/ariali.woff2') format('woff2');
+    src: url('../fonts/Arial-ItalicMT.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AEmpirial';
+    src: url('../fonts/aempirial.woff2') format('woff2');
+    src: url('../fonts/Aempirial.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bello';
+    src: url('../fonts/Bello-Script.woff2') format('woff2');
+    src: url('../fonts/Bello-Script.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica.woff2') format('woff2');
+    src: url('../fonts/Helvetica.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTStd';
+    src: url('../fonts/HelveticaNeueLTStd-BdCn.woff2') format('woff2');
+    src: url('../fonts/HelveticaNeueLTStd-BdCn.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTStd';
+    src: url('../fonts/HelveticaNeueLTStd-BlkCn.woff2') format('woff2');
+    src: url('../fonts/HelveticaNeueLTStd-BlkCn.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTStd';
+    src: url('../fonts/HelveticaNeueLTStd-HvCn.woff2') format('woff2');
+    src: url('../fonts/HelveticaNeueLTStd-HvCn.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTStd';
+    src: url('../fonts/HelveticaNeueLTStd-Lt.woff2') format('woff2');
+    src: url('../fonts/HelveticaNeueLTStd-Lt.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTStd';
+    src: url('../fonts/HelveticaNeueLTStd-LtIt.woff2') format('woff2');
+    src: url('../fonts/HelveticaNeueLTStd-LtIt.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTStd';
+    src: url('../fonts/HelveticaNeueLTStd-ThCn.woff2') format('woff2');
+    src: url('../fonts/HelveticaNeueLTStd-ThCn.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLTStd';
+    src: url('../fonts/HelveticaNeueLTStd-UltLtCn.woff2') format('woff2');
+    src: url('../fonts/HelveticaNeueLTStd-UltLtCn.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 * {
-    /*outline: 1px solid red;*/
+	/*outline: 1px solid red;*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body {
+    font-size: 12px;
+    font-family: 'Arial', sans-serif;
+}
+
+.template-width {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
 }
 .header {
     font-family: ArialMT, arial, sans-serif;
@@ -294,5 +410,140 @@
 }
 .header-carousel__indicator--active {
     background-color: #fd926d;
+}
+
+.wrap-flex {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.menu-list__item {
+    list-style: none;
+}
+
+.subscribe {
+    background-color:  #ededed;
+}
+
+.subscribe__height {
+    height: 55px;
+}
+
+.subscribe__text {
+    color:  #6b6b6b;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.subscribe__input {
+    background-color:  #ffffff;
+    width: 160px;
+    color:  #9f9f9f;
+    font-size: 1rem;
+    font-style: italic;
+    border: none;
+    padding: 10px 10px;
+    outline: none;
+}
+
+.subscribe__btn {
+    background-color:  #fd926d;
+    box-shadow: 0 3px 0 0 #dd6b44;
+    width: 30px;
+    height: 30px;
+    border: none;
+    padding-top: 3px;
+    outline: none;
+}
+
+.subscribe__input:focus::-webkit-input-placeholder { color:transparent; }
+.subscribe__input:focus:-moz-placeholder { color:transparent; }
+.subscribe__input:focus::-moz-placeholder { color:transparent; }
+.subscribe__input:focus:-ms-input-placeholder { color:transparent; }
+
+.subscribe__input:hover, .subscribe__btn:hover {
+    cursor: pointer;
+}
+
+.subscribe__btn:active {
+    -webkit-transform: translateY(2px);
+    -moz-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -o-transform: translateY(2px);
+    transform: translateY(2px);
+    box-shadow: 0 3px 0 0 #fd926d;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+}
+
+.socials__icon {
+    display: block;
+    width: 55px;
+    height: 55px;
+}
+
+.socials__facebook {
+    background: #f7f7f7 url("../img/facebook.png") center no-repeat;
+}
+
+.socials__twitter {
+    background: url("../img/twitter.png") center no-repeat;
+}
+
+.socials__pinterest {
+    background: #f7f7f7 url("../img/pinterest.png") center no-repeat;
+}
+
+.socials__icon:hover,
+.socials__icon:active {
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    -o-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+
+.banners__wrap {
+    width: 484px;
+    height: 340px;
+    overflow: hidden;
+}
+
+.banners__mid-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 484px;
+    height: 169px;
+    overflow: hidden;
+}
+
+.banners__mid-margin {
+    margin-bottom: 2px;
+}
+
+.banners__small-wrap {
+    width: 241px;
+    height: 169px;
+    overflow: hidden;
+}
+
+.carousel-two, .carousel-three, .carousel-four {
+    display: none;
 }
 
