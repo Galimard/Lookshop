@@ -8,6 +8,9 @@
     src: url("../fonts/Arial-BoldMT.woff2"), url("../fonts/Arial-BoldMT.woff") ;
     font-weight: 400;
 }
+* {
+    outline: 1px solid red;
+}
 .header {
     font-family: ArialMT, arial, sans-serif;
 }
@@ -205,5 +208,41 @@
 .customer-shoping__busket-items {
     width: 48px;
     border-right: 1px solid #949393;
+}
+.header-carousel {
+    /*padding: 0 calc((100% - 1200px) / 2);*/
+    margin: 0 auto;
+    height: 440px;
+    width: 1200px;
+    background: url("../img/background_header_carousel.png") center no-repeat;
+}
+.header-carousel__sign {
+    display: flex;
+    width: 342px;
+    height: 320px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 43px 0 0 182px;
+}
+.header-carousel__logo-banner {
+    width: 342px;
+    height: 241px;
+    display: block;
+    background: url("../img/logo_banner_crazy.png") center no-repeat;
+}
+.header-carousel__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 156px;
+    height: 54px;
+    box-shadow: 0 3px 0 #dd6b44;
+    background-color: #fd926d;
+    color: #ffffff;
+    font-family: ArialMT, arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
