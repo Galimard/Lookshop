@@ -798,14 +798,14 @@ html, body {
     font-family: ArialMT, arial, sans-serif;
     width: 160px;
 }
-.customer-service__title {
+.customer-service__title, .information__title, .campaigns__title, .stores__title, .social__title {
     padding-bottom: 19px;
     color: #544f4d;
     font-size: 1.4rem;
     letter-spacing: -0.16px;
     margin: 0;
 }
-.customer-service__item {
+.customer-service__item, .information__item, .campaigns__item, .stores__item {
     text-decoration: none;
     opacity: 0.7;
     color: #544f4d;
@@ -829,8 +829,9 @@ html, body {
 }
 .social {
     width: 125px;
+    height: 110px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -838,5 +839,39 @@ html, body {
     width: 107px;
     height: 107px;
     background: url("../img/ico_secured.png") center no-repeat;
+}
+.social__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.social__item {
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    display: block;
+}
+.social__item-twitter {
+    background: url("../img/ico_twitter.png") center no-repeat;
+}
+.social__item-pinterest {
+    background: url("../img/ico_pinterest.png") center no-repeat;
+}
+.social__item-facebook {
+    background: url("../img/ico_facegbook.png") center no-repeat;
+}
+.social__item-google-plus {
+    background: url("../img/ico_google_plus.png") center no-repeat;
+}
+.social__item-tumblr {
+    background: url("../img/ico_tumblr.png") center no-repeat;
+}
+.social__item-vimeo {
+    background: url("../img/ico_vimeo.png") center no-repeat;
+}
+.social__item-twitter--bottom, .social__item-pinterest--bottom, .social__item-facebook--bottom {
+    padding-bottom: 9px;
 }
 
