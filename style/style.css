@@ -777,3 +777,7 @@ html, body {
     text-transform: uppercase;
     color: #ffffff;
 }
+
+.carousel__item:hover .carousel-item__block-btn {
+    display: flex;
+}
