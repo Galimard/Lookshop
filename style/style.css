@@ -197,7 +197,7 @@ html, body {
 }
 .search {
     display: flex;
-    width: 34px;
+    width: 37px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -289,16 +289,15 @@ html, body {
     color: #c1c1c1;
 }
 .customer-shoping__wrap-busket-info {
+    padding: 0 9px;
     height: 33px;
     background-color: #fafafa;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 9px;
 }
 .customer-shoping__busket-ico {
-    padding-left: 9px;
     display: block;
     text-decoration: none;
     height: 20px;
@@ -337,6 +336,7 @@ html, body {
     background: url("../img/background_header_carousel.png") center no-repeat;
 }
 .header-carousel__sign {
+    box-sizing: content-box;
     display: flex;
     width: 342px;
     height: 320px;
@@ -344,7 +344,6 @@ html, body {
     justify-content: space-between;
     align-items: center;
     padding: 43px 0 0 182px;
-    box-sizing: content-box;
 }
 .header-carousel__logo-banner {
     width: 342px;
@@ -799,3 +798,363 @@ html, body {
     transform: scale(1.1);
     box-shadow: 0 5px 18px 0 rgba(0, 0, 0, 0.35);
 }
+
+/*Блоки после карусели с товарами*/
+.sale {
+    margin: 0 auto;
+    padding: 25px 0;
+    width: 970px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.sale__pict {
+    padding: 0 16px;
+}
+.sale__border {
+    width: 390px;
+    height: 1px;
+    background-color: #b2b2b2;
+    opacity: 0.5;
+}
+.sale-products {
+    margin: 0 auto;
+    width: 970px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.product-item {
+    display: flex;
+    flex-direction: column;
+    height: 395px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+.product-item__img {
+    display: block;
+    width: 220px;
+    height: 290px;
+    overflow: hidden;
+}
+.product-item__img:hover {
+    outline: 1px solid rgba(253, 146, 109, 0.5);
+}
+.product-item__text {
+    padding: 11px 0;
+    display: flex;
+    flex-direction: column;
+    height: 105px;
+    justify-content: space-around;
+    align-items: center;
+}
+.product-item__name {
+    color: #373737;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: -0.12px;
+}
+.product-item__price {
+    color: #373737;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    letter-spacing: -0.22px;
+}
+.product-item__buy {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 120px;
+    height: 32px;
+    font-size: 1.1rem;
+    box-shadow: 0 3px 0 #dd6b44;
+    background-color: #fd926d;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+.product-item__buy:hover {
+    box-shadow: 0 3px 3px rgba(221, 107, 68, 0.8);
+}
+.product-item__buy:active {
+    transform: translateY(2px);
+}
+.product-item__add-ico {
+    width: 11px;
+    height: 11px;
+    display: block;
+    background: url("../img/plus.png");
+}
+.brands {
+    padding-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.brands__wrap-title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.brands__line-title {
+    width: calc((100% - 190px) / 2);
+    height: 1px;
+    background-color: #b2b2b2;
+    opacity: 0.5;
+}
+.brands__title {
+    color: #414141;
+    font-family: "Arial-BoldMT", arial, sans-serif;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: -0.15px;
+    margin: 0;
+    background-color: #ffffff;
+    padding: 0 20px;
+}
+.brands__items {
+    padding: 20px calc((100%  - 970px) / 2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    border-bottom: 1px solid rgba(178, 178, 178, 0.5);
+}
+.brands__item {
+    height: 57px;
+}
+.brands__item-one {
+    width: 83px;
+    background: url("../img/brend01.png") center no-repeat;
+}
+.brands__item-two {
+    width: 51px;
+    background: url("../img/brend02.png") center no-repeat;
+}
+.brands__item-three {
+    width: 57px;
+    background: url("../img/brend03.png") center no-repeat;
+}
+.brands__item-four {
+    width: 56px;
+    background: url("../img/brend04.png") center no-repeat;
+}
+.brands__item-five {
+    width: 84px;
+    background: url("../img/brend05.png") center no-repeat;
+}
+.brands__item-six {
+    width: 98px;
+    background: url("../img/brend06.png") center no-repeat;
+}
+.brands__item-seven {
+    width: 69px;
+    background: url("../img/brend07.png") center no-repeat;
+}
+.brands__item-eight {
+    width: 137px;
+    background: url("../img/brend08.png") center no-repeat;
+}
+.about-lookshop {
+    width: 970px;
+    margin: 0 auto;
+    padding: 29px 0;
+    font-family: ArialMT, arial, sans-serif;
+}
+.about-lookshop__title {
+    text-align: center;
+    color: #414141;
+    font-size: 2rem;
+    letter-spacing: -0.24px;
+    margin: 0;
+    padding-bottom: 14px;
+}
+.about-lookshop__text {
+    text-align: center;
+    color: #999999;
+    font-size: 1.2rem;
+    line-height: 18px;
+}
+.pay-system {
+    padding: 18px calc((100% - 550px) / 2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.pay-system__title {
+    opacity: 0.5;
+    color: #414141;
+    letter-spacing: -0.12px;
+}
+.pay-system__item {
+    width: 35px;
+    height: 22px;
+}
+.pay-system__item-01 {
+    background: url("../img/pay_visa.png") center no-repeat;
+}
+.pay-system__item-02 {
+    background: url("../img/pay_master_card.png") center no-repeat;
+}
+.pay-system__item-03 {
+    background: url("../img/pay-pal.png") center no-repeat;
+}
+.pay-system__item-04 {
+    background: url("../img/pay_american_express.png") center no-repeat;
+}
+.pay-system__item-05 {
+    background: url("../img/pay_visa_electron.png") center no-repeat;
+}
+.pay-system__item-06 {
+    background: url("../img/pay_laser.png") center no-repeat;
+}
+.pay-system__item-07 {
+    background: url("../img/pay_maestro.png") center no-repeat;
+}
+.pay-system__item-08 {
+    background: url("../img/pay_delta.png") center no-repeat;
+}
+.pay-system__item-09 {
+    background: url("../img/pay_solo.png") center no-repeat;
+}
+.pay-system__item-10 {
+    background: url("../img/pay_di.png") center no-repeat;
+}
+.pay-system__item-11 {
+    background: url("../img/pay_dk.png") center no-repeat;
+}
+.footer-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #ededed;
+    padding: 35px calc((100% - 970px) / 2);
+}
+.customer-service {
+    display: flex;
+    flex-direction: column;
+    font-family: ArialMT, arial, sans-serif;
+    width: 160px;
+}
+.customer-service__title, .information__title, .campaigns__title, .stores__title, .social__title {
+    padding-bottom: 19px;
+    color: #544f4d;
+    font-size: 1.4rem;
+    letter-spacing: -0.16px;
+    margin: 0;
+}
+.customer-service__item, .information__item, .campaigns__item, .stores__item {
+    text-decoration: none;
+    opacity: 0.7;
+    color: #544f4d;
+    font-size: 1rem;
+    line-height: 18px;
+}
+.information {
+    display: flex;
+    flex-direction: column;
+    width: 115px;
+}
+.campaigns {
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+}
+.stores {
+    display: flex;
+    flex-direction: column;
+    width: 52px;
+}
+.social {
+    width: 125px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.secure {
+    width: 107px;
+    height: 107px;
+    background: url("../img/ico_secured.png") center no-repeat;
+}
+.social__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.social__item {
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    display: block;
+}
+.social__item-twitter {
+    background: url("../img/ico_twitter.png") center no-repeat;
+}
+.social__item-pinterest {
+    background: url("../img/ico_pinterest.png") center no-repeat;
+}
+.social__item-facebook {
+    background: url("../img/ico_facegbook.png") center no-repeat;
+}
+.social__item-google-plus {
+    background: url("../img/ico_google_plus.png") center no-repeat;
+}
+.social__item-tumblr {
+    background: url("../img/ico_tumblr.png") center no-repeat;
+}
+.social__item-vimeo {
+    background: url("../img/ico_vimeo.png") center no-repeat;
+}
+.social__item-twitter--bottom, .social__item-pinterest--bottom, .social__item-facebook--bottom {
+    padding-bottom: 9px;
+}
+.footer-navigation {
+    padding: 24px calc((100% - 970px) / 2);
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-nav {
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-nav__item {
+    text-decoration: none;
+    display: block;
+    color: #8d8d8d;
+    font-size: 0.9rem;
+}
+.footer-nav__item--border {
+    border-right: 1px solid #8d8d8d;
+    padding-right: 10px;
+}
+.copyright {
+    text-align: right;
+    width: 97px;
+    color: #8d8d8d;
+    font-size: 0.9rem;
+    line-height: 18px;
+}
+
