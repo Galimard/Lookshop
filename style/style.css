@@ -734,4 +734,62 @@ html, body {
     font-size: 1.2rem;
     line-height: 18px;
 }
+.pay-system {
+    padding: 18px calc((100% - 550px) / 2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.pay-system__title {
+    opacity: 0.5;
+    color: #414141;
+    letter-spacing: -0.12px;
+}
+.pay-system__item {
+    width: 35px;
+    height: 22px;
+}
+.pay-system__item-01 {
+    background: url("../img/pay_visa.png") center no-repeat;
+}
+.pay-system__item-02 {
+    background: url("../img/pay_master_card.png") center no-repeat;
+}
+.pay-system__item-03 {
+    background: url("../img/pay-pal.png") center no-repeat;
+}
+.pay-system__item-04 {
+    background: url("../img/pay_american_express.png") center no-repeat;
+}
+.pay-system__item-05 {
+    background: url("../img/pay_visa_electron.png") center no-repeat;
+}
+.pay-system__item-06 {
+    background: url("../img/pay_laser.png") center no-repeat;
+}
+.pay-system__item-07 {
+    background: url("../img/pay_maestro.png") center no-repeat;
+}
+.pay-system__item-08 {
+    background: url("../img/pay_delta.png") center no-repeat;
+}
+.pay-system__item-09 {
+    background: url("../img/pay_solo.png") center no-repeat;
+}
+.pay-system__item-10 {
+    background: url("../img/pay_di.png") center no-repeat;
+}
+.pay-system__item-11 {
+    background: url("../img/pay_dk.png") center no-repeat;
+}
+.footer-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #ededed;
+    padding: 35px calc((100% - 970px) / 2);
+}
 
