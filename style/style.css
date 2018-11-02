@@ -406,7 +406,6 @@ html, body {
 .header-carousel__indicator--active {
     background-color: #fd926d;
 }
->>>>>>> 8e5e250... Простите меня, ветку перепутала. Отработан блок с навигацией карусели
 
 .wrap-flex {
     display: -webkit-flex;
@@ -629,4 +628,11 @@ html, body {
     -ms-transform: none;
     -o-transform: none;
     transform: none;
+}
+
+.carousel-product__wrap {
+    display: flex;
+    justify-content: space-between;
+    background-color:  #fd926d;
+    padding: 30px 0;
 }
