@@ -554,7 +554,7 @@ html, body {
     overflow: hidden;
 }
 
-.carousel-two, .carousel-three, .carousel-four {
+#carousel-two, #carousel-three, #carousel-four {
     display: none;
 }
 

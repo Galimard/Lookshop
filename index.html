@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LookShop</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/style.css">    
 </head>
@@ -94,10 +95,10 @@
     <div class="tabs-product">
         <div class="tabs template-width">
             <ul class="menu-list tabs__menu">
-                <li class="menu-list__item"><a href="#" class="menu-list__link tabs__menu-link tabs__menu-link--active">What's hot?</a></li>
-                <li class="menu-list__item"><a href="#" class="menu-list__link tabs__menu-link">Designers</a></li>
-                <li class="menu-list__item"><a href="#" class="menu-list__link tabs__menu-link">Featured</a></li>
-                <li class="menu-list__item"><a href="#" class="menu-list__link tabs__menu-link">Latest</a></li>
+                <li class="menu-list__item"><a href="#carousel-one" class="menu-list__link tabs__menu-link tabs__menu-link--active">What's hot?</a></li>
+                <li class="menu-list__item"><a href="#carousel-two" class="menu-list__link tabs__menu-link">Designers</a></li>
+                <li class="menu-list__item"><a href="#carousel-three" class="menu-list__link tabs__menu-link">Featured</a></li>
+                <li class="menu-list__item"><a href="#carousel-four" class="menu-list__link tabs__menu-link">Latest</a></li>
             </ul>
             <div class="controls">
                 <a href="#" class="controls__link controls-link__left"></a>
@@ -105,7 +106,7 @@
             </div>
         </div>
         <div class="carousel-product">
-            <div class="carousel-product__wrap carousel-one">
+            <div class="carousel-product__wrap carousel" id="carousel-one">
                 <div class="carousel__item">
                     <div class="carousel-item__img"><a href="#"><img src="img/photo15.jpg" alt="photo"></a></div>
                     <div class="carousel-item__text">
@@ -182,9 +183,9 @@
                     </a>
                 </div>
             </div>
-            <div class="carousel-two">
+            <div class="carousel-product__wrap carousel" id="carousel-two">
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><img src="img/photo20.jpg" alt="photo"></div>
+                    <div class="carousel-item__img"><a href="#"><img src="img/photo20.jpg" alt="photo"></a></div>
                     <div class="carousel-item__text">
                         <p class="carousel-item__name">Mimosa lace dress</p>
                         <p class="carousel-item__price">&#36;76.95</p>
@@ -235,7 +236,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-three">
+            <div class="carousel-product__wrap carousel" id="carousel-three">
                 <div class="carousel__item">
                     <div class="carousel-item__img"><img src="img/photo15.jpg" alt="photo"></div>
                     <div class="carousel-item__text">
@@ -288,7 +289,7 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-four">
+            <div class="carousel-product__wrap carousel" id="carousel-four">
                 <div class="carousel__item">
                     <div class="carousel-item__img"><img src="img/photo20.jpg" alt="photo"></div>
                     <div class="carousel-item__text">
@@ -393,5 +394,6 @@
         This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue.
     </div>
 </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
