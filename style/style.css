@@ -585,6 +585,9 @@ html, body {
     height: 290px;
     overflow: hidden;
 }
+.product-item__img:hover {
+    outline: 1px solid rgba(253, 146, 109, 0.5);
+}
 .product-item__text {
     padding: 11px 0;
     display: flex;
@@ -619,6 +622,12 @@ html, body {
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: -0.5px;
+}
+.product-item__buy:hover {
+    box-shadow: 0 3px 3px rgba(221, 107, 68, 0.8);
+}
+.product-item__buy:active {
+    transform: translateY(2px);
 }
 .product-item__add-ico {
     width: 11px;
