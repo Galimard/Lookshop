@@ -1,4 +1,14 @@
 @font-face {
+    font-family: "ArialMT";
+    src: url("../fonts/arial.woff2"), url("../fonts/arial.woff") ;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Arial-BoldMT";
+    src: url("../fonts/Arial-BoldMT.woff2"), url("../fonts/Arial-BoldMT.woff") ;
+    font-weight: 400;
+}
+@font-face {
     font-family: 'Arial';
     src: url('../fonts/arial.woff2') format('woff2');
     src: url('../fonts/arial.woff') format('woff');
@@ -101,13 +111,12 @@
     font-weight: 400;
     font-style: normal;
 }
-
 * {
+	/*outline: 1px solid red;*/
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 html, body {
     font-size: 12px;
     font-family: 'Arial', sans-serif;
@@ -118,8 +127,7 @@ html, body {
     max-width: 970px;
     margin: 0 auto;
 }
-<<<<<<< HEAD
-=======
+
 .header {
     font-family: ArialMT, arial, sans-serif;
 }
@@ -406,7 +414,6 @@ html, body {
 .header-carousel__indicator--active {
     background-color: #fd926d;
 }
->>>>>>> 8e5e250... Простите меня, ветку перепутала. Отработан блок с навигацией карусели
 
 .wrap-flex {
     display: -webkit-flex;
