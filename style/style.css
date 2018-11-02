@@ -710,4 +710,24 @@ html, body {
     width: 137px;
     background: url("../img/brend08.png") center no-repeat;
 }
+.about-lookshop {
+    width: 970px;
+    margin: 0 auto;
+    padding-top: 29px;
+    font-family: ArialMT, arial, sans-serif;
+}
+.about-lookshop__title {
+    text-align: center;
+    color: #414141;
+    font-size: 2rem;
+    letter-spacing: -0.24px;
+    margin: 0;
+    padding-bottom: 14px;
+}
+.about-lookshop__text {
+    text-align: center;
+    color: #999999;
+    font-size: 1.2rem;
+    line-height: 18px;
+}
 
