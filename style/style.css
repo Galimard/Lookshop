@@ -196,7 +196,7 @@ html, body {
 }
 .search {
     display: flex;
-    width: 34px;
+    width: 37px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -288,6 +288,7 @@ html, body {
     color: #c1c1c1;
 }
 .customer-shoping__wrap-busket-info {
+    padding: 0 9px;
     height: 33px;
     background-color: #fafafa;
     display: flex;
@@ -296,7 +297,6 @@ html, body {
     align-items: center;
 }
 .customer-shoping__busket-ico {
-    padding-left: 9px;
     display: block;
     text-decoration: none;
     height: 20px;
@@ -335,6 +335,7 @@ html, body {
     background: url("../img/background_header_carousel.png") center no-repeat;
 }
 .header-carousel__sign {
+    box-sizing: content-box;
     display: flex;
     width: 342px;
     height: 320px;
@@ -547,3 +548,81 @@ html, body {
     display: none;
 }
 
+/*Блоки после карусели с товарами*/
+.sale {
+    margin: 0 auto;
+    width: 970px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.sale__border {
+    width: 390px;
+    height: 1px;
+    background-color: #b2b2b2;
+    opacity: 0.5;
+}
+.sale-products {
+    margin: 0 auto;
+    width: 970px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.product-item {
+    display: flex;
+    flex-direction: column;
+    height: 395px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+.product-item__img {
+    display: block;
+    width: 220px;
+    height: 290px;
+    overflow: hidden;
+}
+.product-item__text {
+    padding: 11px 0;
+    display: flex;
+    flex-direction: column;
+    height: 105px;
+    justify-content: space-around;
+    align-items: center;
+}
+.product-item__name {
+    color: #373737;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: -0.12px;
+}
+.product-item__price {
+    color: #373737;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    letter-spacing: -0.22px;
+}
+.product-item__buy {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 120px;
+    height: 32px;
+    font-size: 1.1rem;
+    box-shadow: 0 3px 0 #dd6b44;
+    background-color: #fd926d;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+.product-item__add-ico {
+    width: 11px;
+    height: 11px;
+    display: block;
+    background: url("../img/plus.png");
+}
