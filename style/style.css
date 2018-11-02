@@ -118,6 +118,295 @@ html, body {
     max-width: 970px;
     margin: 0 auto;
 }
+<<<<<<< HEAD
+=======
+.header {
+    font-family: ArialMT, arial, sans-serif;
+}
+.customer-info {
+    padding: 0 calc((100% - 970px) / 2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: -0.06px;
+    line-height: 30px;
+}
+.customer-info-change {
+    width: 235px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.change_currency {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70px;
+    border-left: 1px solid #444444;
+    text-align: center;
+}
+.change_currency__current-currency {
+    width: 45px;
+}
+.change_currency__currency-menu {
+    text-decoration: none;
+    display: block;
+    width: 25px;
+    color: #c1c1c1;
+    text-align: center;
+}
+.change_currency__currency-menu:hover {
+    outline: 1px solid #444444;
+}
+.customer-account {
+    border-left: 1px solid #444444;
+    border-right: 1px solid #444444;
+    width: 128px;
+}
+.customer-account__name{
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.customer-account__name::before {
+    display: block;
+    width: 14px;
+    height: 13px;
+    content: "";
+    background: url("../img/ico_contact_user.png") center no-repeat;
+}
+.customer-account__name:hover {
+    outline: 1px solid #444444;
+    /*color: #fd926d;*/
+    /*transition: 0.2s;*/
+}
+.search {
+    display: flex;
+    width: 34px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #444444;
+}
+.search:hover {
+    outline: 1px solid #444444;
+}
+.search__btn {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url("../img/ico_search.png") center no-repeat;
+}
+.navigation {
+    padding: 20px calc((100% - 970px) / 2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: ArialMT, arial, sans-serif;
+    align-items: center;
+}
+.logo_main {
+    text-decoration: none;
+    display: block;
+    width: 120px;
+    height: 28px;
+    background: url("../img/logo_main.png");
+}
+.top-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 435px;
+    font-size: 16px;
+    letter-spacing: -0.08px;
+}
+.top_menu__item {
+    text-decoration: none;
+    color: #000000;
+}
+.top_menu__item::after {
+    float: right;
+    display: block;
+    content: "";
+    width: 15px;
+    height: 18px;
+    background: url("../img/ico_nav_arrow_down.png") center no-repeat;
+}
+.top_menu__item:hover::after{
+    transform: rotateZ(-90deg);
+    transition: 0.3s;
+}
+.top_menu__item:hover {
+    color: #fd926d;
+    transition: 0.3s;
+}
+.customer-shoping {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 214px;
+    height: 66px;
+    border: 1px solid #d6d6d6;
+}
+.customer-shoping__choose-cart {
+    height: 33px;
+    border-bottom: 1px solid #d6d6d6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.customer-shoping__cart-name {
+    color: #949393;
+    font-size: 12px;
+    padding-left: 9px;
+    letter-spacing: -0.06px;
+}
+.customer-shoping__cart-choose-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 30px;
+    height: 100%;
+    color: #c1c1c1;
+}
+.customer-shoping__wrap-busket-info {
+    height: 33px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 9px;
+}
+.customer-shoping__busket-ico {
+    padding-left: 9px;
+    display: block;
+    text-decoration: none;
+    height: 20px;
+    width: 20px;
+    background: url("../img/ico_busket.png") center no-repeat;
+}
+.customer-shoping__busket-info {
+    width: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: -0.06px;
+}
+.customer-shoping__busket-items, .customer-shoping__busket-price {
+    text-decoration: none;
+    color: #949393;
+}
+.customer-shoping__busket-price {
+    width: 20px;
+    padding-left: 4px;
+}
+.customer-shoping__busket-items {
+    width: 48px;
+    border-right: 1px solid #949393;
+}
+.header-carousel {
+    margin: 0 auto;
+    width: 1200px;
+}
+.header-carousel__wrap {
+    /*padding: 0 calc((100% - 1200px) / 2);*/
+    position: relative;
+    height: 440px;
+    background: url("../img/background_header_carousel.png") center no-repeat;
+}
+.header-carousel__sign {
+    display: flex;
+    width: 342px;
+    height: 320px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 43px 0 0 182px;
+    box-sizing: content-box;
+}
+.header-carousel__logo-banner {
+    width: 342px;
+    height: 241px;
+    display: block;
+    background: url("../img/logo_banner_crazy.png") center no-repeat;
+}
+.header-carousel__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 156px;
+    height: 54px;
+    box-shadow: 0 3px 0 #dd6b44;
+    background-color: #fd926d;
+    color: #ffffff;
+    font-family: ArialMT, arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.header-carousel__btn-arrow {
+    padding-left: 20px;
+}
+.header-carousel__prev {
+    position: absolute;
+    top: 162px;
+    left: 0;
+    display: block;
+    width: 30px;
+    height: 117px;
+    background: #ffffff url("../img/ico_carousel_prev.png") center no-repeat;
+    opacity: 0.9;
+}
+.header-carousel__next {
+    top: 162px;
+    right: 0;
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 117px;
+    background: #ffffff url("../img/ico_carousel_next.png") center no-repeat;
+    opacity: 0.9;
+}
+.header-carousel__decore-line {
+    position: absolute;
+    bottom: 0;
+    width: 791px;
+    height: 7px;
+    background-color: #000000;
+    opacity: 0.2;
+}
+.header-carousel__indicators {
+    padding: 32px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 130px;
+    margin: 0 auto;
+}
+.header-carousel__indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #867a76;
+    border-radius: 50%;
+}
+.header-carousel__indicator--active {
+    background-color: #fd926d;
+}
+>>>>>>> 8e5e250... Простите меня, ветку перепутала. Отработан блок с навигацией карусели
 
 .wrap-flex {
     display: -webkit-flex;
@@ -138,6 +427,11 @@ html, body {
 
 .menu-list__item {
     list-style: none;
+}
+
+.menu-list__link {
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .subscribe {
@@ -219,11 +513,11 @@ html, body {
 
 .socials__icon:hover,
 .socials__icon:active {
-    -webkit-transform: translateY(-2px);
-    -moz-transform: translateY(-2px);
-    -ms-transform: translateY(-2px);
-    -o-transform: translateY(-2px);
-    transform: translateY(-2px);
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+    transform: translateY(-3px);
 }
 
 .banners__wrap {
@@ -254,3 +548,85 @@ html, body {
     display: none;
 }
 
+.tabs-product {
+    padding-top: 50px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs__menu {
+    width: 50%;
+    margin: 0;
+}
+
+.tabs__menu-link {
+    display: block;
+    padding: 18px;
+    color:  #555555;
+    font-size: 1.3rem;
+    font-weight: 400;
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    -moz-transition: background-color 0.3s, color 0.3s;
+    -ms-transition: background-color 0.3s, color 0.3s;
+    -o-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tabs__menu-link:hover,
+.tabs__menu-link:active,
+.tabs__menu-link--active {
+    background-color:  #fd926d;
+    color: #ffffff;
+}
+
+.controls {
+    display: flex;
+    text-align: center;
+}
+
+.controls__link {
+    display: block;
+    width: 53px;
+    height: 53px;
+    line-height: 70px;
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    -moz-transition: background-color 0.3s, color 0.3s;
+    -ms-transition: background-color 0.3s, color 0.3s;
+    -o-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.controls-link__left {
+    background:  #f2f2f2 url("../img/arrow-left-big.png") center no-repeat;
+}
+
+.controls-link__right {
+    background:  #f2f2f2 url("../img/arrow-left-big.png") center no-repeat;
+    transform: rotate(180deg);
+}
+
+.controls__link--active {
+    background: #fd926d url("../img/arrow-right-big.png") center no-repeat;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+}
+
+.controls-link__left:hover {
+    background:  #fd926d url("../img/arrow-right-big.png") center no-repeat;
+    transform: rotate(180deg);
+}
+
+.controls-link__right:hover {
+    background:  #fd926d url("../img/arrow-right-big.png") center no-repeat;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+}
