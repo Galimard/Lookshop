@@ -196,7 +196,7 @@ html, body {
 }
 .search {
     display: flex;
-    width: 34px;
+    width: 37px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -288,6 +288,7 @@ html, body {
     color: #c1c1c1;
 }
 .customer-shoping__wrap-busket-info {
+    padding: 0 9px;
     height: 33px;
     background-color: #fafafa;
     display: flex;
@@ -296,7 +297,6 @@ html, body {
     align-items: center;
 }
 .customer-shoping__busket-ico {
-    padding-left: 9px;
     display: block;
     text-decoration: none;
     height: 20px;
@@ -335,6 +335,7 @@ html, body {
     background: url("../img/background_header_carousel.png") center no-repeat;
 }
 .header-carousel__sign {
+    box-sizing: content-box;
     display: flex;
     width: 342px;
     height: 320px;
@@ -545,5 +546,192 @@ html, body {
 
 .carousel-two, .carousel-three, .carousel-four {
     display: none;
+}
+
+/*Блоки после карусели с товарами*/
+.sale {
+    margin: 0 auto;
+    padding: 25px 0;
+    width: 970px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.sale__pict {
+    padding: 0 16px;
+}
+.sale__border {
+    width: 390px;
+    height: 1px;
+    background-color: #b2b2b2;
+    opacity: 0.5;
+}
+.sale-products {
+    margin: 0 auto;
+    width: 970px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.product-item {
+    display: flex;
+    flex-direction: column;
+    height: 395px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+.product-item__img {
+    display: block;
+    width: 220px;
+    height: 290px;
+    overflow: hidden;
+}
+.product-item__img:hover {
+    outline: 1px solid rgba(253, 146, 109, 0.5);
+}
+.product-item__text {
+    padding: 11px 0;
+    display: flex;
+    flex-direction: column;
+    height: 105px;
+    justify-content: space-around;
+    align-items: center;
+}
+.product-item__name {
+    color: #373737;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: -0.12px;
+}
+.product-item__price {
+    color: #373737;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    letter-spacing: -0.22px;
+}
+.product-item__buy {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 120px;
+    height: 32px;
+    font-size: 1.1rem;
+    box-shadow: 0 3px 0 #dd6b44;
+    background-color: #fd926d;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+.product-item__buy:hover {
+    box-shadow: 0 3px 3px rgba(221, 107, 68, 0.8);
+}
+.product-item__buy:active {
+    transform: translateY(2px);
+}
+.product-item__add-ico {
+    width: 11px;
+    height: 11px;
+    display: block;
+    background: url("../img/plus.png");
+}
+.brands {
+    padding-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.brands__wrap-title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.brands__line-title {
+    width: calc((100% - 190px) / 2);
+    height: 1px;
+    background-color: #b2b2b2;
+    opacity: 0.5;
+}
+.brands__title {
+    color: #414141;
+    font-family: "Arial-BoldMT", arial, sans-serif;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: -0.15px;
+    margin: 0;
+    background-color: #ffffff;
+    padding: 0 20px;
+}
+.brands__items {
+    padding: 20px calc((100%  - 970px) / 2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    border-bottom: 1px solid rgba(178, 178, 178, 0.5);
+}
+.brands__item {
+    height: 57px;
+}
+.brands__item-one {
+    width: 83px;
+    background: url("../img/brend01.png") center no-repeat;
+}
+.brands__item-two {
+    width: 51px;
+    background: url("../img/brend02.png") center no-repeat;
+}
+.brands__item-three {
+    width: 57px;
+    background: url("../img/brend03.png") center no-repeat;
+}
+.brands__item-four {
+    width: 56px;
+    background: url("../img/brend04.png") center no-repeat;
+}
+.brands__item-five {
+    width: 84px;
+    background: url("../img/brend05.png") center no-repeat;
+}
+.brands__item-six {
+    width: 98px;
+    background: url("../img/brend06.png") center no-repeat;
+}
+.brands__item-seven {
+    width: 69px;
+    background: url("../img/brend07.png") center no-repeat;
+}
+.brands__item-eight {
+    width: 137px;
+    background: url("../img/brend08.png") center no-repeat;
+}
+.about-lookshop {
+    width: 970px;
+    margin: 0 auto;
+    padding: 29px 0;
+    font-family: ArialMT, arial, sans-serif;
+}
+.about-lookshop__title {
+    text-align: center;
+    color: #414141;
+    font-size: 2rem;
+    letter-spacing: -0.24px;
+    margin: 0;
+    padding-bottom: 14px;
+}
+.about-lookshop__text {
+    text-align: center;
+    color: #999999;
+    font-size: 1.2rem;
+    line-height: 18px;
 }
 
