@@ -792,4 +792,51 @@ html, body {
     background-color: #ededed;
     padding: 35px calc((100% - 970px) / 2);
 }
+.customer-service {
+    display: flex;
+    flex-direction: column;
+    font-family: ArialMT, arial, sans-serif;
+    width: 160px;
+}
+.customer-service__title {
+    padding-bottom: 19px;
+    color: #544f4d;
+    font-size: 1.4rem;
+    letter-spacing: -0.16px;
+    margin: 0;
+}
+.customer-service__item {
+    text-decoration: none;
+    opacity: 0.7;
+    color: #544f4d;
+    font-size: 1rem;
+    line-height: 18px;
+}
+.information {
+    display: flex;
+    flex-direction: column;
+    width: 115px;
+}
+.campaigns {
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+}
+.stores {
+    display: flex;
+    flex-direction: column;
+    width: 52px;
+}
+.social {
+    width: 125px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.secure {
+    width: 107px;
+    height: 107px;
+    background: url("../img/ico_secured.png") center no-repeat;
+}
 
