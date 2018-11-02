@@ -551,11 +551,15 @@ html, body {
 /*Блоки после карусели с товарами*/
 .sale {
     margin: 0 auto;
+    padding: 25px 0;
     width: 970px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+.sale__pict {
+    padding: 0 16px;
 }
 .sale__border {
     width: 390px;
@@ -636,11 +640,11 @@ html, body {
     background: url("../img/plus.png");
 }
 .brands {
+    padding-top: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: relative;
 }
 .brands__wrap-title {
     width: 100%;
@@ -713,7 +717,7 @@ html, body {
 .about-lookshop {
     width: 970px;
     margin: 0 auto;
-    padding-top: 29px;
+    padding: 29px 0;
     font-family: ArialMT, arial, sans-serif;
 }
 .about-lookshop__title {
