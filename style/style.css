@@ -635,3 +635,79 @@ html, body {
     display: block;
     background: url("../img/plus.png");
 }
+.brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.brands__wrap-title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.brands__line-title {
+    width: calc((100% - 190px) / 2);
+    height: 1px;
+    background-color: #b2b2b2;
+    opacity: 0.5;
+}
+.brands__title {
+    color: #414141;
+    font-family: "Arial-BoldMT", arial, sans-serif;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: -0.15px;
+    margin: 0;
+    background-color: #ffffff;
+    padding: 0 20px;
+}
+.brands__items {
+    padding: 20px calc((100%  - 970px) / 2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    border-bottom: 1px solid rgba(178, 178, 178, 0.5);
+}
+.brands__item {
+    height: 57px;
+}
+.brands__item-one {
+    width: 83px;
+    background: url("../img/brend01.png") center no-repeat;
+}
+.brands__item-two {
+    width: 51px;
+    background: url("../img/brend02.png") center no-repeat;
+}
+.brands__item-three {
+    width: 57px;
+    background: url("../img/brend03.png") center no-repeat;
+}
+.brands__item-four {
+    width: 56px;
+    background: url("../img/brend04.png") center no-repeat;
+}
+.brands__item-five {
+    width: 84px;
+    background: url("../img/brend05.png") center no-repeat;
+}
+.brands__item-six {
+    width: 98px;
+    background: url("../img/brend06.png") center no-repeat;
+}
+.brands__item-seven {
+    width: 69px;
+    background: url("../img/brend07.png") center no-repeat;
+}
+.brands__item-eight {
+    width: 137px;
+    background: url("../img/brend08.png") center no-repeat;
+}
+
