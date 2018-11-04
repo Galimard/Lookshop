@@ -417,7 +417,7 @@ html, body {
         text-transform: uppercase;
         letter-spacing: -0.09px;
     }
-    .top-menu-adapt__burger {
+    .burger {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -426,7 +426,7 @@ html, body {
         width: 22px;
         height: 20px;
     }
-    .top-menu-adapt__burger-line {
+    .burger-line {
         display: block;
         cursor: pointer;
         height: 4px;
@@ -434,16 +434,16 @@ html, body {
         background-color: #ffffff;
         border-radius: 2px;
     }
-    .top-menu-adapt__burger:hover .top-menu-adapt__burger-line--disable {
+    .burger:hover .burger-line--disable {
         display: none;
     }
-    .top-menu-adapt__burger:hover .top-menu-adapt__burger-line--top {
+    .burger:hover .burger-line--top {
         position: absolute;
         top: 7px;
         transform: rotate(45deg);
         transition: 0.5s;
     }
-    .top-menu-adapt__burger:hover .top-menu-adapt__burger-line--bottom {
+    .burger:hover .burger-line--bottom {
         position: absolute;
         top: 7px;
         transform: rotate(-45deg);
@@ -500,18 +500,18 @@ html, body {
         text-transform: uppercase;
         letter-spacing: -0.15px;
     }
-    .top-menu-adapt__burger {
+    .burger {
         width: 33px;
         height: 30px;
     }
-    .top-menu-adapt__burger-line {
+    .burger-line {
         height: 6px;
         border-radius: 3px;
     }
-    .top-menu-adapt__burger:hover .top-menu-adapt__burger-line--top {
+    .burger:hover .burger-line--top {
         top: 10px;
     }
-    .top-menu-adapt__burger:hover .top-menu-adapt__burger-line--bottom {
+    .burger:hover .burger-line--bottom {
         top: 10px;
     }
 }
