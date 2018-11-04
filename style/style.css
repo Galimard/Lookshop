@@ -127,6 +127,7 @@ html, body {
     max-width: 970px;
     margin: 0 auto;
 }
+
 .header {
     font-family: ArialMT, arial, sans-serif;
 }
@@ -434,6 +435,11 @@ html, body {
     list-style: none;
 }
 
+.menu-list__link {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 .subscribe {
     background-color:  #ededed;
 }
@@ -460,9 +466,12 @@ html, body {
     outline: none;
 }
 
-.subscribe__btn {
+.btn {
     background-color:  #fd926d;
     box-shadow: 0 3px 0 0 #dd6b44;
+}
+
+.subscribe__btn {
     width: 30px;
     height: 30px;
     border: none;
@@ -513,11 +522,11 @@ html, body {
 
 .socials__icon:hover,
 .socials__icon:active {
-    -webkit-transform: translateY(-2px);
-    -moz-transform: translateY(-2px);
-    -ms-transform: translateY(-2px);
-    -o-transform: translateY(-2px);
-    transform: translateY(-2px);
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+    transform: translateY(-3px);
 }
 
 .banners__wrap {
@@ -544,8 +553,250 @@ html, body {
     overflow: hidden;
 }
 
-.carousel-two, .carousel-three, .carousel-four {
+#carousel-two, #carousel-three, #carousel-four {
     display: none;
+}
+
+.tabs-product {
+    padding-top: 50px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs__menu {
+    width: 50%;
+    margin: 0;
+}
+
+.tabs__menu-link {
+    display: block;
+    padding: 18px;
+    color:  #555555;
+    font-size: 1.3rem;
+    font-weight: 400;
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    -moz-transition: background-color 0.3s, color 0.3s;
+    -ms-transition: background-color 0.3s, color 0.3s;
+    -o-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tabs__menu-link:hover,
+.tabs__menu-link:active,
+.tabs__menu-link--active {
+    background-color:  #fd926d;
+    color: #ffffff;
+}
+
+.controls {
+    display: flex;
+    text-align: center;
+}
+
+.controls__link {
+    display: block;
+    width: 53px;
+    height: 53px;
+    line-height: 70px;
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    -moz-transition: background-color 0.3s, color 0.3s;
+    -ms-transition: background-color 0.3s, color 0.3s;
+    -o-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.controls-link__left {
+    background:  #f2f2f2 url("../img/arrow-left-big.png") center no-repeat;
+}
+
+.controls-link__right {
+    background:  #f2f2f2 url("../img/arrow-left-big.png") center no-repeat;
+    transform: rotate(180deg);
+}
+
+.controls__link--active {
+    background: #fd926d url("../img/arrow-right-big.png") center no-repeat;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+}
+
+.controls-link__left:hover {
+    background:  #fd926d url("../img/arrow-right-big.png") center no-repeat;
+    transform: rotate(180deg);
+}
+
+.controls-link__right:hover {
+    background:  #fd926d url("../img/arrow-right-big.png") center no-repeat;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+}
+
+.carousel-product__wrap {
+    display: flex;
+    justify-content: space-between;
+    background-color:  #fd926d;
+    padding: 30px 0;
+}
+
+.carousel__item {
+    position: relative;
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.carousel-item__img {
+    width: 220px;
+    height: 375px;
+}
+
+.carousel-item__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 45px;
+    background: #ffffff;
+    width: 220px;
+    height: 105px;
+    text-align: center;
+}
+
+.carousel-item__name, .carousel-item__price {
+    color:  #373737;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.carousel-item__price {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.carousel-item-name__link {
+    color:  #373737;
+    text-decoration: none;
+}
+
+.carousel-item__btn {
+    display: flex;
+    width: 120px;
+    height: 29px;
+    padding: 10px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 12px;
+    -webkit-transition: color 0.3s, background 0.3s;
+    -moz-transition: color 0.3s, background 0.3s;
+    -ms-transition: color 0.3s, background 0.3s;
+    -o-transition: color 0.3s, background 0.3s;
+    transition: color 0.3s, background 0.3s;
+}
+
+.carousel-item__btn::after {
+    content: "";
+    display: block;
+    background: url("../img/plus.png") center no-repeat;
+    width: 15px;
+    height: 15px;
+}
+
+.carousel-item__btn:hover {
+    color: #fd926d;
+    background: #ededed;
+    outline: 1px solid #fd926d;
+}
+
+.carousel-item__btn:active {
+    -webkit-transform: translateY(2px);
+    -moz-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -o-transform: translateY(2px);
+    transform: translateY(2px);
+    box-shadow: 0 3px 0 0 #fd926d;
+}
+
+.carousel-item__sale {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    background-color:  #4c4c4c;
+    width: 50px;
+    height: 50px;
+    font-family: 'Helvetica', sans-serif;
+    color:  #ffffff;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 100;
+}
+
+.carousel-item__sale::after {
+    content: "";
+    border: 50px solid transparent;
+    border-right: 0 solid #ffffff;
+    border-bottom: 50px solid #ffffff;
+    position: relative;
+    top: -29px;
+    left: -5px;
+}
+
+.carousel-item__block-btn {
+    position: absolute;
+    top: 75px;
+    left: 43px;
+    display: none;
+    align-items: center;
+    border-radius: 50%;
+    background-color:  #3d3d3d;
+    width: 134px;
+    height: 134px;
+    text-decoration: none;
+    text-align: center;
+    padding: 41px;
+}
+
+.block-btn__text {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.carousel__item:hover .carousel-item__block-btn {
+    display: flex;
+}
+
+.block-btn__text:hover {
+    text-decoration: underline;
+}
+
+.carousel__item:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 0 5px 18px 0 rgba(0, 0, 0, 0.35);
 }
 
 /*Блоки после карусели с товарами*/
