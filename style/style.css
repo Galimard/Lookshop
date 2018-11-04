@@ -709,7 +709,61 @@ html, body {
     -o-transform: translateY(-3px);
     transform: translateY(-3px);
 }
-
+/*Адаптив для блока subscribe*/
+@media all and (max-width: 970px) {
+    .subscribe {
+        padding: 0 15px;
+    }
+}
+@media all and (max-width: 640px) {
+    .subscribe {
+        background-color: #ffffff;
+    }
+    .subscribe--botomm {
+        margin-bottom: 20px;
+    }
+    .subscribe__text--disabled {
+        display: none;
+    }
+    .subscribe__height {
+        height: 210px;
+    }
+    .wrap-flex-adapt {
+        flex-direction: column;
+    }
+    .subscribe__email {
+        width: 100%;
+        position: relative;
+    }
+    .subscribe__input {
+        background-color: #ededed;
+        width: 100%;
+        height: 96px;
+        color: #9f9f9f;
+        font-size: 30px;
+        letter-spacing: -0.15px;
+    }
+    .subscribe__btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 96px;
+        height: 88px;
+        box-shadow: 0 8px 0 #dd6b44;
+    }
+    .subscribe__text {
+        font-size: 26px;
+        letter-spacing: -0.13px;
+    }
+    .socials__icon {
+        width: 90px;
+        height: 88px;
+    }
+    .socials__twitter {
+        background-color: #ededed;
+    }
+}
+/*Окончание адаптива для блока subscribe*/
 .banners__wrap {
     width: 484px;
     height: 340px;
