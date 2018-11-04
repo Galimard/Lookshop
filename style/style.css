@@ -258,10 +258,15 @@ html, body {
     .customer-account__name::before{
         width: 40px;
         height: 38px;
-        /*background: url(../img/ico_contact_user_adapt.png) center no-repeat;*/
+        background: url(../img/ico_contact_user_adapt.png) center no-repeat;
     }
     .search {
         width: 100px;
+    }
+    .search__btn {
+        width: 38px;
+        height: 38px;
+        background: url("../img/ico_search_adapt.png") center no-repeat;
     }
 }
 /*Окончание адаптива для блока customer-info*/
@@ -452,6 +457,10 @@ html, body {
     .logo_main {
         width: 360px;
         height: 90px;
+        background: url("../img/logo_main_adapt.png") center no-repeat;
+    }
+    .logo_main--big {
+        margin: 35px 0 58px;
     }
     .customer-shoping {
         height: 96px;
@@ -462,6 +471,7 @@ html, body {
     }
     .customer-shoping__wrap-busket-info {
         height: 100%;
+        padding: 0 30px;
     }
     .customer-shoping__busket-info {
         justify-content: flex-end;
@@ -469,17 +479,40 @@ html, body {
         font-size: 30px;
         text-transform: uppercase;
         letter-spacing: -0.15px;
-        padding: 0 30px;
     }
     .customer-shoping__busket-ico {
         width: 51px;
         height: 49px;
+        background: url("../img/ico_busket_adapt.png") center no-repeat;
     }
     .customer-shoping__busket-items {
         padding-right: 15px;
     }
     .customer-shoping__busket-price {
         padding-left: 15px;
+    }
+    .top-menu-adapt {
+        height: 96px;
+    }
+    .top-menu-adapt__name {
+        color: #ffffff;
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: -0.15px;
+    }
+    .top-menu-adapt__burger {
+        width: 33px;
+        height: 30px;
+    }
+    .top-menu-adapt__burger-line {
+        height: 6px;
+        border-radius: 3px;
+    }
+    .top-menu-adapt__burger:hover .top-menu-adapt__burger-line--top {
+        top: 10px;
+    }
+    .top-menu-adapt__burger:hover .top-menu-adapt__burger-line--bottom {
+        top: 10px;
     }
 }
 /*Окончание адаптива для блока navigation*/
@@ -593,7 +626,6 @@ html, body {
         display: none;
     }
 }
-
 /*Окончание адатива для блока header-carousel*/
 .wrap-flex {
     display: -webkit-flex;
@@ -750,6 +782,10 @@ html, body {
         width: 96px;
         height: 88px;
         box-shadow: 0 8px 0 #dd6b44;
+        background: #fd926d url("../img/plus_adapt.png") center no-repeat;
+    }
+    .subscribe__btn img {
+        display: none;
     }
     .subscribe__text {
         font-size: 26px;
@@ -759,8 +795,14 @@ html, body {
         width: 90px;
         height: 88px;
     }
+    .socials__facebook {
+        background: #f7f7f7 url(../img/facebook_adapt.png) center no-repeat;
+    }
     .socials__twitter {
-        background-color: #ededed;
+        background: #ededed url("../img/twitter_adapt.png") center no-repeat;
+    }
+    .socials__pinterest {
+        background: #f7f7f7 url(../img/pinterest_adapt.png) center no-repeat;
     }
 }
 /*Окончание адаптива для блока subscribe*/
