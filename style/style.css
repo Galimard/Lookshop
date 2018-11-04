@@ -1550,6 +1550,9 @@ html, body {
     border-right: 1px solid #8d8d8d;
     padding-right: 10px;
 }
+.burger--disabled {
+    display: none;
+}
 .copyright {
     text-align: right;
     width: 97px;
@@ -1557,4 +1560,26 @@ html, body {
     font-size: 0.9rem;
     line-height: 18px;
 }
-
+/*Адаптив для блока footer-navigation*/
+@media all and (max-width: 970px) {
+    .footer-navigation {
+        padding: 24px 15px;
+    }
+}
+@media all and (max-width: 640px) {
+    .footer-navigation {
+        padding: 24px 30px;
+    }
+    .footer-nav {
+        display: none;
+    }
+    .burger--disabled {
+        display: flex;
+    }
+    .copyright {
+        width: 211px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+/*Окончание адаптива для блока footer-navigation*/
