@@ -1056,6 +1056,9 @@ html, body {
     letter-spacing: -0.16px;
     margin: 0;
 }
+.social__title {
+    padding: 0;
+}
 .customer-service__item, .information__item, .campaigns__item, .stores__item {
     text-decoration: none;
     opacity: 0.7;
@@ -1096,7 +1099,9 @@ html, body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    height: 77px;
+    width: 125px;
+    align-content: space-between;
 }
 .social__item {
     text-decoration: none;
@@ -1122,9 +1127,9 @@ html, body {
 .social__item-vimeo {
     background: url("../img/ico_vimeo.png") center no-repeat;
 }
-.social__item-twitter--bottom, .social__item-pinterest--bottom, .social__item-facebook--bottom {
-    padding-bottom: 9px;
-}
+/*.social__item-twitter--bottom, .social__item-pinterest--bottom, .social__item-facebook--bottom {*/
+    /*padding-bottom: 9px;*/
+/*}*/
 .footer-navigation {
     padding: 24px calc((100% - 970px) / 2);
     background-color: #000000;
