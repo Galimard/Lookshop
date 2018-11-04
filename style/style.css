@@ -1109,6 +1109,9 @@ html, body {
     height: 35px;
     display: block;
 }
+.social__item:hover {
+    transform: translateY(-3px);
+}
 .social__item-twitter {
     background: url("../img/ico_twitter.png") center no-repeat;
 }
@@ -1127,9 +1130,11 @@ html, body {
 .social__item-vimeo {
     background: url("../img/ico_vimeo.png") center no-repeat;
 }
-/*.social__item-twitter--bottom, .social__item-pinterest--bottom, .social__item-facebook--bottom {*/
-    /*padding-bottom: 9px;*/
-/*}*/
+.footer__link:hover {
+    color: #dd6b44;
+    transition: 0.3s;
+    opacity: 1;
+}
 .footer-navigation {
     padding: 24px calc((100% - 970px) / 2);
     background-color: #000000;
@@ -1150,6 +1155,11 @@ html, body {
     display: block;
     color: #8d8d8d;
     font-size: 0.9rem;
+}
+.footer-nav__item:hover {
+    color: #dd6b44;
+    transition: 0.2s;
+    text-decoration: underline;
 }
 .footer-nav__item--border {
     border-right: 1px solid #8d8d8d;
