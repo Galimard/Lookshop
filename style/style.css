@@ -707,7 +707,9 @@ html, body {
 .subscribe {
     background-color:  #ededed;
 }
-
+.subscribe__email {
+    position: relative;
+}
 .subscribe__height {
     height: 55px;
 }
@@ -736,6 +738,9 @@ html, body {
 }
 
 .subscribe__btn {
+    position: absolute;
+    right: 0;
+    top: 0;
     width: 30px;
     height: 30px;
     border: none;
