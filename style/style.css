@@ -225,8 +225,8 @@ html, body {
 @media all and (max-width: 640px) {
     .customer-info {
         padding: 0;
-        height: 192px;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         font-size: 30px;
@@ -267,6 +267,29 @@ html, body {
         width: 38px;
         height: 38px;
         background: url("../img/ico_search_adapt.png") center no-repeat;
+    }
+}
+@media all and (max-width: 461px) {
+    .change_currency__current-currency span {
+        display: none;
+    }
+}
+@media all and (max-width: 410px) {
+    .customer-info {
+        font-size: 23px;
+    }
+    .customer-care {
+        height: 80px;
+        line-height: 80px;
+    }
+    .customer-info-change {
+        height: 80px;
+        line-height: 80px;
+    }
+}
+@media all and (max-width: 337px) {
+    .customer-account__name::before {
+        display: none;
     }
 }
 /*Окончание адаптива для блока customer-info*/
@@ -513,6 +536,34 @@ html, body {
     }
     .burger:hover .burger-line--bottom {
         top: 10px;
+    }
+}
+@media all and (max-width: 410px) {
+    .customer-shoping__busket-info {
+        font-size: 23px;
+    }
+    .customer-shoping__wrap-busket-info {
+        padding: 0 15px;
+    }
+    .top-menu-adapt__name {
+        font-size: 23px;
+    }
+    .customer-shoping {
+        height: 80px;
+    }
+    .top-menu-adapt {
+        height: 80px;
+    }
+    .customer-shoping__busket-ico {
+        width: 45px;
+        height: 43px;
+        background-size: contain;
+    }
+}
+@media all and (max-width: 389px) {
+    .logo_main--big {
+        width: 100%;
+        background-size: contain;
     }
 }
 /*Окончание адаптива для блока navigation*/
@@ -803,6 +854,44 @@ html, body {
     }
     .socials__pinterest {
         background: #f7f7f7 url(../img/pinterest_adapt.png) center no-repeat;
+    }
+}
+@media all and (max-width: 410px) {
+    .subscribe__height {
+        height: 171px;
+    }
+    .subscribe__input {
+        font-size: 23px;
+        height: 80px;
+    }
+    .subscribe__btn {
+        height: 72px;
+        width: 88px;
+    }
+    .socials__icon {
+        height: 72px;
+    }
+    .subscribe__text {
+        font-size: 21px;
+    }
+}
+@media all and (max-width: 344px) {
+    .subscribe__height {
+        height: auto;
+    }
+    .subscribe__btn {
+        width: 78px;
+    }
+    .socials {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .subscribe__text {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        padding-bottom: 10px;
     }
 }
 /*Окончание адаптива для блока subscribe*/
@@ -1208,6 +1297,7 @@ html, body {
 @media all and (max-width: 640px) {
     .sale-products {
         padding: 0 15px 30px;
+        justify-content: space-between;
     }
     .load-more {
         margin: 0 auto;
@@ -1221,11 +1311,18 @@ html, body {
         font-size: 20px;
         text-transform: uppercase;
     }
+    .load-more:hover {
+        /*box-shadow: 2px 4px 0 rgba(221, 107, 68, 0.8);*/
+        background-color: #fd926d;
+        color: #ffffff;
+        transition: 0.2s;
+    }
     .load-more--bottom {
         margin-bottom: 30px;
     }
     .product-item {
         height: 472px;
+        width: 275px;
     }
     .product-item__link-img {
         width: 275px;
@@ -1275,7 +1372,27 @@ html, body {
         background: url("../img/plus_adapt.png") center no-repeat;
         background-size: contain;
     }
+    .product-item--left {
+        margin-left: 0;
+    }
 }
+@media all and (max-width: 585px) {
+    .sale-products {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/*@media all and (max-width: 594px) {*/
+    /*.product-item--left {*/
+        /*margin-left: 10px;*/
+    /*}*/
+/*}*/
+/*@media all and (max-width: 589px) {*/
+    /*.product-item--left {*/
+        /*margin-left: 0;*/
+    /*}*/
+/*}*/
 /*Окончание адаптива для блока sale-products*/
 .brands {
     padding-top: 65px;
@@ -1690,6 +1807,11 @@ html, body {
         width: 211px;
         font-size: 24px;
         line-height: 30px;
+    }
+}
+@media all and (max-width: 410px) {
+    .copyright {
+        font-size: 21px;
     }
 }
 /*Окончание адаптива для блока footer-navigation*/
