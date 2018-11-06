@@ -5,12 +5,23 @@ $(document).ready(function(){
     $('.tabs__menu-link').click(function(e) { //при клике на ссылку таба
         e.preventDefault(); //останавливаем загрузку страницы сслыки
 
-       var tab = $(this).attr('href'); //достаем адрес нужного блока с новым текстом
+        var item = $(this).closest('.tabs-menu__item');
+        var contentItem = $('.carousel');
+        var itemPos = item.data('class');
 
-        $('.tabs__menu-link--active').removeClass('tabs__menu-link--active'); //находим все ссылки с данным классом и удаляем класс актив
-        $(this).addClass('tabs__menu-link--active'); //у нажатой ссылки добавляем класс актив
-       $(tab).css({'display':'flex'}); //показываем текущую вкладку
-       $('.carousel').not(tab).css({'display':'none'}); //скрываем остальные вкладки, если честно, не понимаю почему эту строчку пришлось добавить, но без нее правильно не работало
+        contentItem.filter('.carousel-'+itemPos)
+            .add(item)
+            .addClass('carousel--active')
+            .siblings()
+            .removeClass('carousel--active');
+
+        $('.carousel-first').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            appendArrows: $('.controls'),
+            prevArrow: '<a href="#" class="controls__link controls-link__left"></a>',
+            nextArrow: '<a href="#" class="controls__link controls-link__right"></a>',
+        });
     });
 
     //слайдер в хедере
@@ -24,38 +35,32 @@ $(document).ready(function(){
 
     //слайдер в carousel-product
 
-    $('#carousel-one').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        appendArrows: $('.controls'),
-        prevArrow: '<a href="#" class="controls__link controls-link__left"></a>',
-        nextArrow: '<a href="#" class="controls__link controls-link__right"></a>',
-    });
 
-    $('#carousel-two').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        appendArrows: $('.controls'),
-        prevArrow: '<a href="#" class="controls__link controls-link__left"></a>',
-        nextArrow: '<a href="#" class="controls__link controls-link__right"></a>',
-    });
 
-    $('#carousel-three').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        appendArrows: $('.controls'),
-        prevArrow: '<a href="#" class="controls__link controls-link__left"></a>',
-        nextArrow: '<a href="#" class="controls__link controls-link__right"></a>',
-    });
-
-    $('#carousel-four').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        appendArrows: $('.controls'),
-        prevArrow: '<a href="#" class="controls__link controls-link__left"></a>',
-        nextArrow: '<a href="#" class="controls__link controls-link__right"></a>',
-    });
-});
+//     $('.carousel-second').slick({
+//         slidesToShow: 6,
+//         slidesToScroll: 1,
+//         appendArrows: $('.controls'),
+//         prevArrow: '<a href="#" class="controls__link controls-link__left"></a>',
+//         nextArrow: '<a href="#" class="controls__link controls-link__right"></a>',
+//     });
+//
+//     $('.carousel-third').slick({
+//         slidesToShow: 6,
+//         slidesToScroll: 1,
+//         appendArrows: $('.controls'),
+//         prevArrow: '<a href="#" class="controls__link controls-link__left"></a>',
+//         nextArrow: '<a href="#" class="controls__link controls-link__right"></a>',
+//     });
+//
+//     $('.carousel-fourth').slick({
+//         slidesToShow: 6,
+//         slidesToScroll: 1,
+//         appendArrows: $('.controls'),
+//         prevArrow: '<a href="#" class="controls__link controls-link__left"></a>',
+//         nextArrow: '<a href="#" class="controls__link controls-link__right"></a>',
+//     });
+// });
 
 //responsive: [
 //     //     {

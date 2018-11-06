@@ -986,17 +986,30 @@ html, body {
     color:  #555555;
     font-size: 1.3rem;
     font-weight: 400;
-    -webkit-transition: background-color 0.3s, color 0.3s;
-    -moz-transition: background-color 0.3s, color 0.3s;
-    -ms-transition: background-color 0.3s, color 0.3s;
-    -o-transition: background-color 0.3s, color 0.3s;
-    transition: background-color 0.3s, color 0.3s;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+.tabs-menu__item--active {
+    background-color:  #fd926d;
+}
+
+.tabs-menu__item:hover,
+.tabs-menu__item:active {
+    background-color:  #fd926d;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
 }
 
 .tabs__menu-link:hover,
 .tabs__menu-link:active,
 .tabs__menu-link--active {
-    background-color:  #fd926d;
     color: #ffffff;
 }
 
@@ -1049,8 +1062,12 @@ html, body {
     transform: none;
 }
 
-#carousel-two, #carousel-three, #carousel-four {
+.carousel {
     display: none;
+}
+
+.carousel--active {
+    display: flex;
 }
 
 .carousel-product {
