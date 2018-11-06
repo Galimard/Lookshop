@@ -301,7 +301,6 @@ html, body {
         justify-content: center;
         align-items: center;
         font-size: 30px;
-
     }
     .customer-care {
         line-height: 96px;
@@ -326,10 +325,24 @@ html, body {
     .customer-account {
         width: 385px;
     }
+    .customer-account__info {
+        font-size: 30px;
+    }
     .customer-account__info::before{
         width: 40px;
         height: 38px;
         background: url(../img/ico_contact_user_adapt.png) center no-repeat;
+    }
+    .customer-account__form {
+        width: 130%;
+        height: 250px;
+    }
+    .customer-account__input {
+        height: 60px;
+        font-size: 28px;
+    }
+    .customer-account__submit {
+        height: 60px;
     }
     .search {
         width: 100px;
@@ -356,6 +369,12 @@ html, body {
     .customer-info-change {
         height: 80px;
         line-height: 80px;
+    }
+    .customer-account__info {
+        font-size: 23px;
+    }
+    .customer-account__input {
+        font-size: 20px;
     }
 }
 @media all and (max-width: 337px) {
