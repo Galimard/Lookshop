@@ -73,7 +73,7 @@
 }
 
 @font-face {
-    font-family: 'HelveticaNeueLTStd';
+    font-family: 'HelveticaNeueLTStd Hv Cn';
     src: url('../fonts/HelveticaNeueLTStd-HvCn.woff2') format('woff2');
     src: url('../fonts/HelveticaNeueLTStd-HvCn.woff') format('woff');
     font-weight: 400;
@@ -105,7 +105,7 @@
 }
 
 @font-face {
-    font-family: 'HelveticaNeueLTStd';
+    font-family: 'Helvetica Neue LT Std - Ult Lt Cn';
     src: url('../fonts/HelveticaNeueLTStd-UltLtCn.woff2') format('woff2');
     src: url('../fonts/HelveticaNeueLTStd-UltLtCn.woff') format('woff');
     font-weight: 400;
@@ -1038,7 +1038,110 @@ html, body {
 .banners {
     padding: 30px 0;
 }
-.banners__wrap {
+.banners__wrap-column {
+    margin: 0 auto;
+    width: 970px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 340px;
+}
+.banners__wrap-row {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.banners__img {
+    width: auto;
+    height: auto;
+}
+.banners__item {
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+}
+.banners__banner-one {
+    width: 50%;
+    height: 100%;
+}
+.banners__banner-two {
+    width: 100%;
+    height: 50%;
+}
+.banners__banner-three {
+    width: 50%;
+    height: 50%;
+}
+.banners__banner-four {
+    width: 50%;
+    height: 50%;
+}
+.banners__sign {
+    position: absolute;
+}
+.banners__sign-one {
+    right: 43px;
+    top: 69px;
+    width: 217px;
+    height: 197px;
+    background: url("../img/1.png") center no-repeat;
+}
+.banners__sign-two {
+    left: 29px;
+    top: 17px;
+    width: 131px;
+    height: 135px;
+    background: url("../img/2.png") center no-repeat;
+}
+.banners__sign-three {
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.19);
+    color: #ffffff;
+    font-family: "Helvetica Neue LT Std - Ult Lt Cn", arial, sans-serif;
+    font-size: 34px;
+    text-transform: uppercase;
+}
+.banners__sign-text {
+    text-align: center;
+    width: 118px;
+    color: #ffffff;
+    font-family: 'HelveticaNeueLTStd Hv Cn', arial, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+@media all and (max-width: 970px) {
+    .banners {
+        padding: 33px 15px;
+    }
+}
+@media all and (max-width: 969px) {
+    .banners__wrap-column {
+        width: 484px;
+        height: auto;
+    }
+    .banners__banner-one {
+        width: 100%;
+        height: 100%;
+    }
+    .banners__wrap-row {
+        width: 100%;
+    }
+}
+@media all and (max-width: 640px) {
+    .banners {
+        display: none;
+    }
+}
+/*.banners__wrap {
     display: block;
     width: 484px;
     height: 340px;
@@ -1065,7 +1168,7 @@ html, body {
 
 .banners__one {
     background: url("../img/1.png") center no-repeat;
-}
+}*/
 
 .tabs-product {
     padding-top: 50px;
