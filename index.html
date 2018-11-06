@@ -16,7 +16,7 @@
             <div class="customer-care">custom care: 888-23-4567</div>
             <div class="customer-info-change">
                 <div class="change_currency">
-                    <div class="change_currency__current-currency">$ US</div>
+                    <div class="change_currency__current-currency">$ <span>US</span></div>
                     <a href="#" class="change_currency__currency-menu">&#9207;</a>
                 </div>
                 <div class="customer-account">
@@ -28,15 +28,16 @@
             </div>
         </div>
         <div class="navigation">
-            <a href="#" class="logo_main"></a>
-            <nav class="top-menu">
-                <a href="#" class="top_menu__item">new</a>
-                <a href="#" class="top_menu__item">designers</a>
-                <a href="#" class="top_menu__item">women</a>
-                <a href="#" class="top_menu__item">men</a>
-                <a href="#" class="top_menu__item">clearance</a>
-            </nav>
-            <div class="customer-shoping">
+            <div class="navigation-wrap">
+                <a href="#" class="logo_main logo_main--big"></a>
+                <nav class="top-menu">
+                    <a href="#" class="top_menu__item">new</a>
+                    <a href="#" class="top_menu__item">designers</a>
+                    <a href="#" class="top_menu__item">women</a>
+                    <a href="#" class="top_menu__item">men</a>
+                    <a href="#" class="top_menu__item">clearance</a>
+                </nav>
+                <div class="customer-shoping">
                 <div class="customer-shoping__choose-cart">
                     <span class="customer-shoping__cart-name">Your cart</span>
                     <a href="#" class="customer-shoping__cart-choose-btn">&#9207;</a>
@@ -48,6 +49,15 @@
                         <a href="#" class="customer-shoping__busket-price">$ 0</a>
                     </div>
                 </div>
+            </div>
+            </div>
+            <div class="top-menu-adapt top-menu-adapt--bottom">
+                <div class="top-menu-adapt__name">menu</div>
+                <a href="#" class="burger">
+                    <span class="burger-line burger-line--top"></span>
+                    <span class="burger-line burger-line--disable"></span>
+                    <span class="burger-line burger-line--bottom"></span>
+                </a>
             </div>
         </div>
         <div class="header-carousel">
@@ -70,25 +80,41 @@
         </div>
     </header>
 <div class="main">
-    <div class="subscribe">
-        <div class="template-width wrap-flex subscribe__height">
+    <div class="subscribe subscribe--botomm">
+        <div class="template-width wrap-flex wrap-flex-adapt subscribe__height">
             <div class="subscribe__email">
-                <span class="subscribe__text">Stay updated</span><input type="email" title="email" placeholder="Your email address" class="subscribe__input"><button type="submit" class="subscribe__btn btn"><img src="img/plus.png" alt="plus"></button>
+                <span class="subscribe__text subscribe__text--disabled">Stay updated</span>
+                <input type="email" title="email" placeholder="Your email address" class="subscribe__input">
+                <button type="submit" class="subscribe__btn btn"><img src="img/plus.png" alt="plus"></button>
             </div>
             <div class="socials">
                 <span class="subscribe__text">Find us here</span>
-                <a href="#" class="socials__icon socials__facebook"></a><a href="#" class="socials__icon socials__twitter"></a><a href="#" class="socials__icon socials__pinterest"></a>
+                <a href="#" class="socials__icon socials__facebook"></a>
+                <a href="#" class="socials__icon socials__twitter"></a>
+                <a href="#" class="socials__icon socials__pinterest"></a>
             </div>
         </div>
     </div>
     <div class="banners">
         <div class="template-width wrap-flex">
-            <div class="banners__wrap"><a href="#"><img src="img/photo10.jpg" alt="photo"></a></div>
             <div class="banners__wrap">
-                <div class="banners__mid-wrap banners__mid-margin"><a href="#"><img src="img/photo11.jpg" alt="photo"></a></div>
+                <a href="#">
+                    <img src="img/photo10.jpg" alt="photo">
+                </a>
+            </div>
+            <div class="banners__wrap">
+                <div class="banners__mid-wrap banners__mid-margin">
+                    <a href="#">
+                        <img src="img/photo11.jpg" alt="photo">
+                    </a>
+                </div>
                 <div class="banners__mid-wrap">
-                    <div class="banners__small-wrap"><a href="#"><img src="img/photo12.jpg" alt="photo"></a></div>
-                    <div class="banners__small-wrap"><a href="#"><img src="img/photo13.jpg" alt="photo"></a></div>
+                    <div class="banners__small-wrap">
+                        <a href="#"><img src="img/photo12.jpg" alt="photo"></a>
+                    </div>
+                    <div class="banners__small-wrap">
+                        <a href="#"><img src="img/photo13.jpg" alt="photo"></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -102,18 +128,18 @@
                 <li class="menu-list__item"><a href="#carousel-four" class="menu-list__link tabs__menu-link">Latest</a></li>
             </ul>
             <div class="controls">
-                <a href="#" class="controls__link controls-link__left"></a>
-                <a href="#" class="controls__link controls-link__right controls__link--active"></a>
+                <!--<a href="#" class="controls__link controls-link__left"></a>-->
+                <!--<a href="#" class="controls__link controls-link__right controls__link&#45;&#45;active"></a>-->
             </div>
         </div>
         <div class="carousel-product">
             <div class="carousel-product__wrap carousel multiple-items" id="carousel-one">
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><a href="#"><img src="img/photo15.jpg" alt="photo"></a></div>
+                    <a href="#" class="carousel-item__img"><img src="img/photo15.jpg" alt="photo"></a>
                     <div class="carousel-item__text">
                         <p class="carousel-item__name">Mimosa lace dress</p>
                         <p class="carousel-item__price">&#36;76.95</p>
-                        <a href="#" class="btn carousel-item__btn">Add to cart</a>
+                        <a href="#" class="btn carousel-item__btn product-item__buy">Add to cart</a>
                     </div>
                     <a href="#" class="carousel-item__block-btn">
                         <div><img src="img/cart.png" alt="cart">
@@ -121,24 +147,24 @@
                     </a>
                 </div>
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><a href="#"><img src="img/photo24.jpg" alt="photo"></a></div>
+                    <a href="#" class="carousel-item__img"><img src="img/photo24.jpg" alt="photo"></a>
                     <div class="carousel-item__text">
                         <p class="carousel-item__name"><a href="#" class="carousel-item-name__link">Feel tank</a></p>
                         <p class="carousel-item__price">&#36;59.95</p>
-                        <a href="#" class="btn carousel-item__btn">Add to cart</a>
+                        <a href="#" class="btn carousel-item__btn product-item__buy">Add to cart</a>
                     </div>
-                    <div class="carousel-item__sale">Sale</div>
+                    <div class="carousel-item__sale"></div>
                     <a href="#" class="carousel-item__block-btn">
                         <div><img src="img/cart.png" alt="cart">
                             <span class="block-btn__text">Shop it</span></div>
                     </a>
                 </div>
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><a href="#"><img src="img/photo17.jpg" alt="photo"></a></div>
+                    <a href="#" class="carousel-item__img"><img src="img/photo17.jpg" alt="photo"></a>
                     <div class="carousel-item__text">
                         <p class="carousel-item__name"><a href="#" class="carousel-item-name__link">Hot shorts</a></p>
                         <p class="carousel-item__price">&#36;35.95</p>
-                        <a href="#" class="btn carousel-item__btn">Add to cart</a>
+                        <a href="#" class="btn carousel-item__btn product-item__buy">Add to cart</a>
                     </div>
                     <a href="#" class="carousel-item__block-btn">
                         <div><img src="img/cart.png" alt="cart">
@@ -146,37 +172,37 @@
                     </a>
                 </div>
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><a href="#"><img src="img/photo18.jpg" alt="photo"></a></div>
+                    <a href="#" class="carousel-item__img"><img src="img/photo18.jpg" alt="photo"></a>
                     <div class="carousel-item__text">
                         <p class="carousel-item__name"><a href="#" class="carousel-item-name__link">Petrol sweater</a></p>
                         <p class="carousel-item__price">&#36;21.50</p>
-                        <a href="#" class="btn carousel-item__btn">Add to cart</a>
+                        <a href="#" class="btn carousel-item__btn product-item__buy">Add to cart</a>
                     </div>
-                    <div class="carousel-item__sale">Sale</div>
+                    <div class="carousel-item__sale"></div>
                     <a href="#" class="carousel-item__block-btn">
                         <div><img src="img/cart.png" alt="cart">
                             <span class="block-btn__text">Shop it</span></div>
                     </a>
                 </div>
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><a href="#"><img src="img/photo15.jpg" alt="photo"></a></div>
+                    <a href="#" class="carousel-item__img"><img src="img/photo15.jpg" alt="photo"></a>
                     <div class="carousel-item__text">
                         <p class="carousel-item__name"><a href="#" class="carousel-item-name__link">Mimosa lace dress</a></p>
                         <p class="carousel-item__price">&#36;76.95</p>
-                        <a href="#" class="btn carousel-item__btn">Add to cart</a>
+                        <a href="#" class="btn carousel-item__btn product-item__buy">Add to cart</a>
                     </div>
-                    <div class="carousel-item__sale">Sale</div>
+                    <div class="carousel-item__sale"></div>
                     <a href="#" class="carousel-item__block-btn">
                         <div><img src="img/cart.png" alt="cart">
                             <span class="block-btn__text">Shop it</span></div>
                     </a>
                 </div>
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><a href="#"><img src="img/photo24.jpg" alt="photo"></a></div>
+                    <a href="#" class="carousel-item__img"><img src="img/photo24.jpg" alt="photo"></a>
                     <div class="carousel-item__text">
                         <p class="carousel-item__name"><a href="#" class="carousel-item-name__link">Feel tank</a></p>
                         <p class="carousel-item__price">&#36;59.95</p>
-                        <a href="#" class="btn carousel-item__btn">Add to cart</a>
+                        <a href="#" class="btn carousel-item__btn product-item__buy">Add to cart</a>
                     </div>
                     <a href="#" class="carousel-item__block-btn">
                         <div><img src="img/cart.png" alt="cart">
@@ -186,11 +212,11 @@
             </div>
             <div class="carousel-product__wrap carousel multiple-items" id="carousel-two">
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><a href="#"><img src="img/photo20.jpg" alt="photo"></a></div>
+                    <a href="#" class="carousel-item__img"><img src="img/photo20.jpg" alt="photo"></a>
                     <div class="carousel-item__text">
                         <p class="carousel-item__name">Mimosa lace dress</p>
                         <p class="carousel-item__price">&#36;76.95</p>
-                        <a href="#" class="btn carousel-item__btn">Add to cart</a>
+                        <a href="#" class="btn carousel-item__btn product-item__buy">Add to cart</a>
                     </div>
                     <a href="#" class="carousel-item__block-btn">
                         <div><img src="img/cart.png" alt="cart">
@@ -198,24 +224,24 @@
                     </a>
                 </div>
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><a href="#"><img src="img/photo21.jpg" alt="photo"></a></div>
+                    <a href="#" class="carousel-item__img"><img src="img/photo21.jpg" alt="photo"></a>
                     <div class="carousel-item__text">
                         <p class="carousel-item__name">Feel tank</p>
                         <p class="carousel-item__price">&#36;59.95</p>
-                        <a href="#" class="btn carousel-item__btn">Add to cart</a>
+                        <a href="#" class="btn carousel-item__btn product-item__buy">Add to cart</a>
                     </div>
-                    <div class="carousel-item__sale">Sale</div>
+                    <div class="carousel-item__sale"></div>
                     <a href="#" class="carousel-item__block-btn">
                         <div><img src="img/cart.png" alt="cart">
                             <span class="block-btn__text">Shop it</span></div>
                     </a>
                 </div>
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><a href="#"><img src="img/photo22.jpg" alt="photo"></a></div>
+                    <a href="#" class="carousel-item__img"><img src="img/photo22.jpg" alt="photo"></a>
                     <div class="carousel-item__text">
                         <p class="carousel-item__name">Hot shorts</p>
                         <p class="carousel-item__price">&#36;35.95</p>
-                        <a href="#" class="btn carousel-item__btn">Add to cart</a>
+                        <a href="#" class="btn carousel-item__btn product-item__buy">Add to cart</a>
                     </div>
                     <a href="#" class="carousel-item__block-btn">
                         <div><img src="img/cart.png" alt="cart">
@@ -223,37 +249,37 @@
                     </a>
                 </div>
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><a href="#"><img src="img/photo23.jpg" alt="photo"></a></div>
+                    <a href="#" class="carousel-item__img"><img src="img/photo23.jpg" alt="photo"></a>
                     <div class="carousel-item__text">
                         <p class="carousel-item__name">Petrol sweater</p>
                         <p class="carousel-item__price">&#36;21.50</p>
-                        <a href="#" class="btn carousel-item__btn">Add to cart</a>
+                        <a href="#" class="btn carousel-item__btn product-item__buy">Add to cart</a>
                     </div>
-                    <div class="carousel-item__sale">Sale</div>
+                    <div class="carousel-item__sale"></div>
                     <a href="#" class="carousel-item__block-btn">
                         <div><img src="img/cart.png" alt="cart">
                             <span class="block-btn__text">Shop it</span></div>
                     </a>
                 </div>
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><a href="#"><img src="img/photo15.jpg" alt="photo"></a></div>
+                    <a href="#" class="carousel-item__img"><img src="img/photo15.jpg" alt="photo"></a>
                     <div class="carousel-item__text">
                         <p class="carousel-item__name">Mimosa lace dress</p>
                         <p class="carousel-item__price">&#36;76.95</p>
-                        <a href="#" class="btn carousel-item__btn">Add to cart</a>
+                        <a href="#" class="btn carousel-item__btn product-item__buy">Add to cart</a>
                     </div>
-                    <div class="carousel-item__sale">Sale</div>
+                    <div class="carousel-item__sale"></div>
                     <a href="#" class="carousel-item__block-btn">
                         <div><img src="img/cart.png" alt="cart">
                             <span class="block-btn__text">Shop it</span></div>
                     </a>
                 </div>
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><a href="#"><img src="img/photo24.jpg" alt="photo"></a></div>
+                    <a href="#" class="carousel-item__img"><img src="img/photo24.jpg" alt="photo"></a>
                     <div class="carousel-item__text">
                         <p class="carousel-item__name">Feel tank</p>
                         <p class="carousel-item__price">&#36;59.95</p>
-                        <a href="#" class="btn carousel-item__btn">Add to cart</a>
+                        <a href="#" class="btn carousel-item__btn product-item__buy">Add to cart</a>
                     </div>
                     <a href="#" class="carousel-item__block-btn">
                         <div><img src="img/cart.png" alt="cart">
@@ -263,11 +289,11 @@
             </div>
             <div class="carousel-product__wrap carousel multiple-items" id="carousel-three">
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><a href="#"><img src="img/photo15.jpg" alt="photo"></a></div>
+                    <a href="#" class="carousel-item__img"><img src="img/photo15.jpg" alt="photo"></a>
                     <div class="carousel-item__text">
                         <p class="carousel-item__name">Mimosa lace dress</p>
                         <p class="carousel-item__price">&#36;76.95</p>
-                        <a href="#" class="btn carousel-item__btn">Add to cart</a>
+                        <a href="#" class="btn carousel-item__btn product-item__buy">Add to cart</a>
                     </div>
                     <a href="#" class="carousel-item__block-btn">
                         <div><img src="img/cart.png" alt="cart">
@@ -275,24 +301,24 @@
                     </a>
                 </div>
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><a href="#"><img src="img/photo24.jpg" alt="photo"></a></div>
+                    <a href="#" class="carousel-item__img"><img src="img/photo24.jpg" alt="photo"></a>
                     <div class="carousel-item__text">
-                        <p class="carousel-item__name">Feel tank</p>
+                        <p class="carousel-item__name"><a href="#" class="carousel-item-name__link">Feel tank</a></p>
                         <p class="carousel-item__price">&#36;59.95</p>
-                        <a href="#" class="btn carousel-item__btn">Add to cart</a>
+                        <a href="#" class="btn carousel-item__btn product-item__buy">Add to cart</a>
                     </div>
-                    <div class="carousel-item__sale">Sale</div>
+                    <div class="carousel-item__sale"></div>
                     <a href="#" class="carousel-item__block-btn">
                         <div><img src="img/cart.png" alt="cart">
                             <span class="block-btn__text">Shop it</span></div>
                     </a>
                 </div>
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><a href="#"><img src="img/photo17.jpg" alt="photo"></a></div>
+                    <a href="#" class="carousel-item__img"><img src="img/photo17.jpg" alt="photo"></a>
                     <div class="carousel-item__text">
-                        <p class="carousel-item__name">Hot shorts</p>
+                        <p class="carousel-item__name"><a href="#" class="carousel-item-name__link">Hot shorts</a></p>
                         <p class="carousel-item__price">&#36;35.95</p>
-                        <a href="#" class="btn carousel-item__btn">Add to cart</a>
+                        <a href="#" class="btn carousel-item__btn product-item__buy">Add to cart</a>
                     </div>
                     <a href="#" class="carousel-item__block-btn">
                         <div><img src="img/cart.png" alt="cart">
@@ -300,37 +326,37 @@
                     </a>
                 </div>
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><a href="#"><img src="img/photo18.jpg" alt="photo"></a></div>
+                    <a href="#" class="carousel-item__img"><img src="img/photo18.jpg" alt="photo"></a>
                     <div class="carousel-item__text">
-                        <p class="carousel-item__name">Petrol sweater</p>
+                        <p class="carousel-item__name"><a href="#" class="carousel-item-name__link">Petrol sweater</a></p>
                         <p class="carousel-item__price">&#36;21.50</p>
-                        <a href="#" class="btn carousel-item__btn">Add to cart</a>
+                        <a href="#" class="btn carousel-item__btn product-item__buy">Add to cart</a>
                     </div>
-                    <div class="carousel-item__sale">Sale</div>
+                    <div class="carousel-item__sale"></div>
                     <a href="#" class="carousel-item__block-btn">
                         <div><img src="img/cart.png" alt="cart">
                             <span class="block-btn__text">Shop it</span></div>
                     </a>
                 </div>
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><a href="#"><img src="img/photo15.jpg" alt="photo"></a></div>
+                    <a href="#" class="carousel-item__img"><img src="img/photo15.jpg" alt="photo"></a>
                     <div class="carousel-item__text">
-                        <p class="carousel-item__name">Mimosa lace dress</p>
+                        <p class="carousel-item__name"><a href="#" class="carousel-item-name__link">Mimosa lace dress</a></p>
                         <p class="carousel-item__price">&#36;76.95</p>
-                        <a href="#" class="btn carousel-item__btn">Add to cart</a>
+                        <a href="#" class="btn carousel-item__btn product-item__buy">Add to cart</a>
                     </div>
-                    <div class="carousel-item__sale">Sale</div>
+                    <div class="carousel-item__sale"></div>
                     <a href="#" class="carousel-item__block-btn">
                         <div><img src="img/cart.png" alt="cart">
                             <span class="block-btn__text">Shop it</span></div>
                     </a>
                 </div>
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><a href="#"><img src="img/photo24.jpg" alt="photo"></a></div>
+                    <a href="#" class="carousel-item__img"><img src="img/photo24.jpg" alt="photo"></a>
                     <div class="carousel-item__text">
-                        <p class="carousel-item__name">Feel tank</p>
+                        <p class="carousel-item__name"><a href="#" class="carousel-item-name__link">Feel tank</a></p>
                         <p class="carousel-item__price">&#36;59.95</p>
-                        <a href="#" class="btn carousel-item__btn">Add to cart</a>
+                        <a href="#" class="btn carousel-item__btn product-item__buy">Add to cart</a>
                     </div>
                     <a href="#" class="carousel-item__block-btn">
                         <div><img src="img/cart.png" alt="cart">
@@ -340,59 +366,83 @@
             </div>
             <div class="carousel-product__wrap carousel multiple-items" id="carousel-four">
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><a href="#"><img src="img/photo20.jpg" alt="photo"></a></div>
+                    <a href="#" class="carousel-item__img"><img src="img/photo20.jpg" alt="photo"></a>
                     <div class="carousel-item__text">
                         <p class="carousel-item__name">Mimosa lace dress</p>
                         <p class="carousel-item__price">&#36;76.95</p>
-                        <a href="#" class="btn carousel-item__btn">Add to cart</a>
+                        <a href="#" class="btn carousel-item__btn product-item__buy">Add to cart</a>
                     </div>
+                    <a href="#" class="carousel-item__block-btn">
+                        <div><img src="img/cart.png" alt="cart">
+                            <span class="block-btn__text">Shop it</span></div>
+                    </a>
                 </div>
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><a href="#"><img src="img/photo21.jpg" alt="photo"></a></div>
+                    <a href="#" class="carousel-item__img"><img src="img/photo21.jpg" alt="photo"></a>
                     <div class="carousel-item__text">
                         <p class="carousel-item__name">Feel tank</p>
                         <p class="carousel-item__price">&#36;59.95</p>
-                        <a href="#" class="btn carousel-item__btn">Add to cart</a>
+                        <a href="#" class="btn carousel-item__btn product-item__buy">Add to cart</a>
                     </div>
-                    <div class="carousel-item__sale">Sale</div>
+                    <div class="carousel-item__sale"></div>
+                    <a href="#" class="carousel-item__block-btn">
+                        <div><img src="img/cart.png" alt="cart">
+                            <span class="block-btn__text">Shop it</span></div>
+                    </a>
                 </div>
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><a href="#"><img src="img/photo22.jpg" alt="photo"></a></div>
+                    <a href="#" class="carousel-item__img"><img src="img/photo22.jpg" alt="photo"></a>
                     <div class="carousel-item__text">
                         <p class="carousel-item__name">Hot shorts</p>
                         <p class="carousel-item__price">&#36;35.95</p>
-                        <a href="#" class="btn carousel-item__btn">Add to cart</a>
+                        <a href="#" class="btn carousel-item__btn product-item__buy">Add to cart</a>
                     </div>
+                    <a href="#" class="carousel-item__block-btn">
+                        <div><img src="img/cart.png" alt="cart">
+                            <span class="block-btn__text">Shop it</span></div>
+                    </a>
                 </div>
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><a href="#"><img src="img/photo23.jpg" alt="photo"></a></div>
+                    <a href="#" class="carousel-item__img"><img src="img/photo23.jpg" alt="photo"></a>
                     <div class="carousel-item__text">
                         <p class="carousel-item__name">Petrol sweater</p>
                         <p class="carousel-item__price">&#36;21.50</p>
-                        <a href="#" class="btn carousel-item__btn">Add to cart</a>
+                        <a href="#" class="btn carousel-item__btn product-item__buy">Add to cart</a>
                     </div>
-                    <div class="carousel-item__sale">Sale</div>
+                    <div class="carousel-item__sale"></div>
+                    <a href="#" class="carousel-item__block-btn">
+                        <div><img src="img/cart.png" alt="cart">
+                            <span class="block-btn__text">Shop it</span></div>
+                    </a>
                 </div>
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><a href="#"><img src="img/photo15.jpg" alt="photo"></a></div>
+                    <a href="#" class="carousel-item__img"><img src="img/photo15.jpg" alt="photo"></a>
                     <div class="carousel-item__text">
                         <p class="carousel-item__name">Mimosa lace dress</p>
                         <p class="carousel-item__price">&#36;76.95</p>
-                        <a href="#" class="btn carousel-item__btn">Add to cart</a>
+                        <a href="#" class="btn carousel-item__btn product-item__buy">Add to cart</a>
                     </div>
-                    <div class="carousel-item__sale">Sale</div>
+                    <div class="carousel-item__sale"></div>
+                    <a href="#" class="carousel-item__block-btn">
+                        <div><img src="img/cart.png" alt="cart">
+                            <span class="block-btn__text">Shop it</span></div>
+                    </a>
                 </div>
                 <div class="carousel__item">
-                    <div class="carousel-item__img"><a href="#"><img src="img/photo24.jpg" alt="photo"></a></div>
+                    <a href="#" class="carousel-item__img"><img src="img/photo24.jpg" alt="photo"></a>
                     <div class="carousel-item__text">
                         <p class="carousel-item__name">Feel tank</p>
                         <p class="carousel-item__price">&#36;59.95</p>
-                        <a href="#" class="btn carousel-item__btn">Add to cart</a>
+                        <a href="#" class="btn carousel-item__btn product-item__buy">Add to cart</a>
                     </div>
+                    <a href="#" class="carousel-item__block-btn">
+                        <div><img src="img/cart.png" alt="cart">
+                            <span class="block-btn__text">Shop it</span></div>
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
+</div>
     <div class="sale">
         <div class="sale__border"></div>
         <div class="sale__pict">
@@ -402,7 +452,28 @@
     </div>
     <div class="sale-products">
         <div class="product-item">
-            <a href="#" class="product-item__img"><img src="img/photo20.jpg" alt="photo"></a>
+            <a href="#" class="product-item__link-img">
+                <img class="product-item__img" src="img/photo20.jpg" alt="photo"></a>
+            <div class="product-item__text">
+                <div class="product-item__name">Nadia dress</div>
+                <div class="product-item__price">&#36;64.95</div>
+                <a class="product-item__buy" href="#">Add to cart <span class="product-item__add-ico"></span></a>
+            </div>
+        </div>
+        <div class="product-item product-item--left">
+            <a href="#" class="product-item__link-img">
+                <img class="product-item__img product-item__img--adapt1" src="img/photo21.jpg" alt="photo">
+            </a>
+            <div class="product-item__text">
+                <div class="product-item__name">Nadia dress</div>
+                <div class="product-item__price">&#36;64.95</div>
+                <a class="product-item__buy" href="#">Add to cart <span class="product-item__add-ico"></span></a>
+            </div>
+        </div>
+        <div class="product-item product-item--left">
+            <a href="#" class="product-item__link-img">
+                <img class="product-item__img product-item__img--adapt2" src="img/photo22.jpg" alt="photo">
+            </a>
             <div class="product-item__text">
                 <div class="product-item__name">Nadia dress</div>
                 <div class="product-item__price">&#36;64.95</div>
@@ -410,23 +481,9 @@
             </div>
         </div>
         <div class="product-item">
-            <a href="#" class="product-item__img"><img src="img/photo21.jpg" alt="photo"></a>
-            <div class="product-item__text">
-                <div class="product-item__name">Nadia dress</div>
-                <div class="product-item__price">&#36;64.95</div>
-                <a class="product-item__buy" href="#">Add to cart <span class="product-item__add-ico"></span></a>
-            </div>
-        </div>
-        <div class="product-item">
-            <a href="#" class="product-item__img"><img src="img/photo22.jpg" alt="photo"></a>
-            <div class="product-item__text">
-                <div class="product-item__name">Nadia dress</div>
-                <div class="product-item__price">&#36;64.95</div>
-                <a class="product-item__buy" href="#">Add to cart <span class="product-item__add-ico"></span></a>
-            </div>
-        </div>
-        <div class="product-item">
-            <a href="#" class="product-item__img"><img src="img/photo23.jpg" alt="photo"></a>
+            <a href="#" class="product-item__link-img">
+                <img class="product-item__img" src="img/photo23.jpg" alt="photo">
+            </a>
             <div class="product-item__text">
                 <div class="product-item__name">Nadia dress</div>
                 <div class="product-item__price">&#36;64.95</div>
@@ -434,22 +491,24 @@
             </div>
         </div>
     </div>
+    <button class="load-more load-more--bottom">load more</button>
     <div class="brands">
         <div class="brands__wrap-title">
             <div class="brands__line-title"></div>
             <h3 class="brands__title">favourite brands</h3>
             <div class="brands__line-title"></div>
         </div>
-
         <div class="brands__items">
-            <div class="brands__item brands__item-one"></div>
-            <div class="brands__item brands__item-two"></div>
-            <div class="brands__item brands__item-three"></div>
-            <div class="brands__item brands__item-four"></div>
-            <div class="brands__item brands__item-five"></div>
-            <div class="brands__item brands__item-six"></div>
-            <div class="brands__item brands__item-seven"></div>
-            <div class="brands__item brands__item-eight"></div>
+            <div class="brands-wrap">
+                <div class="brands__item brands__item-one"></div>
+                <div class="brands__item brands__item-two"></div>
+                <div class="brands__item brands__item-three"></div>
+                <div class="brands__item brands__item-four"></div>
+                <div class="brands__item brands__item-five"></div>
+                <div class="brands__item brands__item-six"></div>
+                <div class="brands__item brands__item-seven"></div>
+                <div class="brands__item brands__item-eight"></div>
+            </div>
         </div>
     </div>
     <div class="about-lookshop">
@@ -458,6 +517,7 @@
         This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue.
         </div>
     </div>
+</div>
     <footer class="footer">
         <div class="pay-system">
             <h4 class="pay-system__title">We accept</h4>
@@ -474,51 +534,55 @@
             <div class="pay-system__item pay-system__item-11"></div>
         </div>
         <div class="footer-wrap">
-            <div class="customer-service">
-                <h3 class="customer-service__title">Customer Service</h3>
-                <a href="#" class="customer-service__item">Contact</a>
-                <a href="#" class="customer-service__item">FAQ</a>
-                <a href="#" class="customer-service__item">Terms of payment</a>
-                <a href="#" class="customer-service__item">Terms of sale</a>
-                <a href="#" class="customer-service__item">Delivery terms and conditions</a>
-                <a href="#" class="customer-service__item">Returns and Refunds</a>
-            </div>
-            <div class="information">
-                <h3 class="information__title">Information</h3>
-                <a href="#" class="information__item">Affiliate</a>
-                <a href="#" class="information__item">Cookies</a>
-                <a href="#" class="information__item">How to Shop</a>
-                <a href="#" class="information__item">About Nelly</a>
-                <a href="#" class="information__item">Investor relations</a>
-            </div>
-            <div class="campaigns">
-                <h3 class="campaigns__title">Campaigns</h3>
-                <a href="#" class="campaigns__item">Evening dresses</a>
-                <a href="#" class="campaigns__item">Makeup</a>
-                <a href="#" class="campaigns__item">Fashion forward</a>
-                <a href="#" class="campaigns__item">training clothes</a>
-                <a href="#" class="campaigns__item">Special Occasion Dresses</a>
-            </div>
-            <div class="stores">
-                <h3 class="stores__title">Stores</h3>
-                <a href="#" class="stores__item">Paris</a>
-                <a href="#" class="stores__item">New York</a>
-                <a href="#" class="stores__item">London</a>
-                <a href="#" class="stores__item">Madrid</a>
-                <a href="#" class="stores__item">Tokio</a>
-            </div>
-            <div class="social">
-                <h3 class="social__title">Social</h3>
-                <div class="social__items">
-                    <a href="#" class="social__item social__item-twitter social__item-twitter--bottom"></a>
-                    <a href="#" class="social__item social__item-pinterest social__item-pinterest--bottom"></a>
-                    <a href="#" class="social__item social__item-facebook social__item-facebook--bottom"></a>
-                    <a href="#" class="social__item social__item-google-plus"></a>
-                    <a href="#" class="social__item social__item-tumblr"></a>
-                    <a href="#" class="social__item social__item-vimeo"></a>
+            <div class="footer__menu-items">
+                <div class="customer-service">
+                    <h3 class="customer-service__title">Customer Service</h3>
+                    <a href="#" class="customer-service__item footer__link">Contact</a>
+                    <a href="#" class="customer-service__item footer__link">FAQ</a>
+                    <a href="#" class="customer-service__item footer__link">Terms of payment</a>
+                    <a href="#" class="customer-service__item footer__link">Terms of sale</a>
+                    <a href="#" class="customer-service__item footer__link">Delivery terms and conditions</a>
+                    <a href="#" class="customer-service__item footer__link">Returns and Refunds</a>
+                </div>
+                <div class="information">
+                    <h3 class="information__title">Information</h3>
+                    <a href="#" class="information__item footer__link">Affiliate</a>
+                    <a href="#" class="information__item footer__link">Cookies</a>
+                    <a href="#" class="information__item footer__link">How to Shop</a>
+                    <a href="#" class="information__item footer__link">About Nelly</a>
+                    <a href="#" class="information__item footer__link">Investor relations</a>
+                </div>
+                <div class="campaigns">
+                    <h3 class="campaigns__title">Campaigns</h3>
+                    <a href="#" class="campaigns__item footer__link">Evening dresses</a>
+                    <a href="#" class="campaigns__item footer__link">Makeup</a>
+                    <a href="#" class="campaigns__item footer__link">Fashion forward</a>
+                    <a href="#" class="campaigns__item footer__link">training clothes</a>
+                    <a href="#" class="campaigns__item footer__link">Special Occasion Dresses</a>
+                </div>
+                <div class="stores">
+                    <h3 class="stores__title">Stores</h3>
+                    <a href="#" class="stores__item footer__link">Paris</a>
+                    <a href="#" class="stores__item footer__link">New York</a>
+                    <a href="#" class="stores__item footer__link">London</a>
+                    <a href="#" class="stores__item footer__link">Madrid</a>
+                    <a href="#" class="stores__item footer__link">Tokio</a>
                 </div>
             </div>
-            <div class="secure"></div>
+            <div class="footer__social-wrap">
+                <div class="social">
+                    <h3 class="social__title">Social</h3>
+                    <div class="social__items">
+                        <a href="#" class="social__item social__item-twitter social__item-twitter--bottom"></a>
+                        <a href="#" class="social__item social__item-pinterest social__item-pinterest--bottom"></a>
+                        <a href="#" class="social__item social__item-facebook social__item-facebook--bottom"></a>
+                        <a href="#" class="social__item social__item-google-plus"></a>
+                        <a href="#" class="social__item social__item-tumblr"></a>
+                        <a href="#" class="social__item social__item-vimeo"></a>
+                    </div>
+                </div>
+                <div class="secure secure--top"></div>
+            </div>
         </div>
         <div class="footer-navigation">
             <div class="footer-nav">
@@ -528,10 +592,15 @@
                 <a href="#" class="footer-nav__item footer-nav__item--border">Store Directory</a>
                 <a href="#" class="footer-nav__item">About Us</a>
             </div>
+            <a href="#" class="burger burger--disabled">
+                <span class="burger-line burger-line--top"></span>
+                <span class="burger-line burger-line--disable"></span>
+                <span class="burger-line burger-line--bottom"></span>
+            </a>
+
             <div class="copyright">© LookShop.com All Rights Reserved</div>
         </div>
     </footer>
-</div>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="plugins/slick/slick.min.js"></script>
     <script src="js/carousel.js"></script>

@@ -1,11 +1,14 @@
 $(document).ready(function(){
 
-    //карусель в tabs-product
+   //карусель в tabs-product
 
-    // $('.carousel').slick({
-    //     infinite: true,
-    //     slidesToShow: 6,
-    //     slidesToScroll: 1
-    // });
+    $('.carousel').slick({
+        appendArrows: $('.controls'),
+        prevArrow: '<a href="#" class="controls__link controls-link__left"></a>',
+        nextArrow: '<a href="#" class="controls__link controls-link__right"></a>',
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1
+    });
 
 });
