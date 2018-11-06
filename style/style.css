@@ -627,6 +627,7 @@ html, body {
     height: 117px;
     background: #ffffff url("../img/ico_carousel_prev.png") center no-repeat;
     opacity: 0.9;
+    z-index: 100;
 }
 .header-carousel__next {
     top: 162px;
@@ -637,6 +638,7 @@ html, body {
     height: 117px;
     background: #ffffff url("../img/ico_carousel_next.png") center no-repeat;
     opacity: 0.9;
+    z-index: 100;
 }
 .header-carousel__decore-line {
     position: absolute;
@@ -663,9 +665,6 @@ html, body {
 .header-carousel__indicator--active {
     background-color: #fd926d;
 }
-/*.slick-active {*/
-    /*background-color: #fd926d;*/
-/*}*/
 /*Адаптив для блока header-carousel*/
 @media all and (max-width: 1199px) {
     .header-carousel {
@@ -759,10 +758,38 @@ html, body {
     outline: none;
 }
 
-.subscribe__input:focus::-webkit-input-placeholder { color:transparent; }
-.subscribe__input:focus:-moz-placeholder { color:transparent; }
-.subscribe__input:focus::-moz-placeholder { color:transparent; }
-.subscribe__input:focus:-ms-input-placeholder { color:transparent; }
+.subscribe__input:focus::-webkit-input-placeholder {
+    opacity:0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+.subscribe__input:focus:-moz-placeholder {
+    opacity:0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+.subscribe__input:focus::-moz-placeholder {
+    opacity:0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+.subscribe__input:focus:-ms-input-placeholder {
+    opacity:0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
 
 .subscribe__input:hover, .subscribe__btn:hover {
     cursor: pointer;
