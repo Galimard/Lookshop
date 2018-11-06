@@ -174,6 +174,7 @@ html, body {
 }
 .change_currency__currency-menu:hover {
     outline: 1px solid #444444;
+    transition: 0.2s;
 }
 .customer-account {
     border-left: 1px solid #444444;
@@ -208,6 +209,7 @@ html, body {
 }
 .customer-account__info:hover {
     outline: 1px solid #444444;
+    transition: 0.2s;
 }
 .customer-account__check {
     display: none;
@@ -239,9 +241,11 @@ html, body {
 }
 .customer-account__input:hover {
     border: 1px solid rgba(255, 255, 255, 0.7);
+    transition: 0.2s;
 }
 .customer-account__input:focus {
     border: 1px solid rgba(255, 255, 255, 0.7);
+    transition: 0.2s;
 }
 .customer-account__input::placeholder {
     color: rgba(255, 255, 255, 0.7);
@@ -262,9 +266,11 @@ html, body {
 }
 .customer-account__submit:hover {
     border: 1px solid rgba(255, 255, 255, 0.7);
+    transition: 0.2s;
 }
 .customer-account__submit:active {
     transform: translateY(2px);
+    transition: 0.2s;
 }
 .search {
     display: flex;
@@ -276,6 +282,7 @@ html, body {
 }
 .search:hover {
     outline: 1px solid #444444;
+    transition: 0.2s;
 }
 .search__btn {
     display: block;
@@ -1347,6 +1354,7 @@ html, body {
 }
 .product-item__buy:hover {
     box-shadow: 0 3px 3px rgba(221, 107, 68, 0.8);
+    transition: 0.2s;
 }
 .product-item__buy:active {
     transform: translateY(2px);
@@ -1464,6 +1472,7 @@ html, body {
     }
     .product-item__buy:hover {
         box-shadow: 0 6px 5px rgba(221, 107, 68, 0.8);
+        transition: 0.2s;
     }
     .product-item__add-ico {
         width: 17px;
@@ -1645,6 +1654,7 @@ html, body {
 }
 .pay-system__item:hover {
     transform: scale(0.95, 0.95);
+    transition: 0.2s;
 }
 .pay-system__item-01 {
     background: url("../img/pay_visa.png") center no-repeat;
@@ -1777,6 +1787,7 @@ html, body {
 }
 .social__item:hover {
     transform: translateY(-3px);
+    transition: 0.2s;
 }
 .social__item-twitter {
     background: url("../img/ico_twitter.png") center no-repeat;
