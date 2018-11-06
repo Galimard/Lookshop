@@ -571,10 +571,6 @@ html, body {
     display: none;
 }
 
-.slick-prev:before, .slick-next:before {
-    color:red !important;
-}
-
 .header-carousel {
     margin: 0 auto;
     width: 1200px;
@@ -964,9 +960,6 @@ html, body {
     height: 169px;
     overflow: hidden;
 }
-#carousel-two, #carousel-three, #carousel-four {
-    display: none;
-}
 
 .tabs-product {
     padding-top: 50px;
@@ -1006,7 +999,17 @@ html, body {
     display: flex;
     text-align: center;
 }
+/*.slick-prev:before, .slick-next:before {*/
+    /*color:red !important;*/
+/*}*/
 
+/*.slick-next {*/
+    /*right: 0;*/
+/*}*/
+
+/*.slick-prev {*/
+    /*left: 0;*/
+/*}*/
 .controls__link {
     display: block;
     width: 53px;
@@ -1049,6 +1052,10 @@ html, body {
     -ms-transform: none;
     -o-transform: none;
     transform: none;
+}
+
+#carousel-two, #carousel-three, #carousel-four {
+    display: none;
 }
 
 .carousel-product {
