@@ -938,6 +938,7 @@ html, body {
     padding: 30px 0;
 }
 .banners__wrap {
+    display: block;
     width: 484px;
     height: 340px;
     overflow: hidden;
@@ -959,6 +960,10 @@ html, body {
     width: 241px;
     height: 169px;
     overflow: hidden;
+}
+
+.banners__one {
+    background: url("../img/1.png") center no-repeat;
 }
 
 .tabs-product {

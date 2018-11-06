@@ -21,10 +21,34 @@ $(document).ready(function(){
     });
 
     $('#carousel-one').slick({
-        slidesToShow: 5,
+        slidesToShow: 6,
         slidesToScroll: 1,
         appendArrows: $('.controls'),
         prevArrow: '<a href="#" class="controls__link controls-link__left"></a>',
         nextArrow: '<a href="#" class="controls__link controls-link__right"></a>',
+    });
+
+    $('#carousel-two').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        // appendArrows: $('.controls'),
+        // prevArrow: '<a href="#" class="controls__link controls-link__left"></a>',
+        // nextArrow: '<a href="#" class="controls__link controls-link__right"></a>',
+    });
+
+    $('#carousel-three').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        // appendArrows: $('.controls'),
+        // prevArrow: '<a href="#" class="controls__link controls-link__left"></a>',
+        // nextArrow: '<a href="#" class="controls__link controls-link__right"></a>',
+    });
+
+    $('#carousel-four').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        // appendArrows: $('.controls'),
+        // prevArrow: '<a href="#" class="controls__link controls-link__left"></a>',
+        // nextArrow: '<a href="#" class="controls__link controls-link__right"></a>',
     });
 });
