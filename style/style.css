@@ -567,6 +567,14 @@ html, body {
     }
 }
 /*Окончание адаптива для блока navigation*/
+.slide2, .slide3 {
+    display: none;
+}
+
+.slick-prev:before, .slick-next:before {
+    color:red !important;
+}
+
 .header-carousel {
     margin: 0 auto;
     width: 1200px;
@@ -655,6 +663,9 @@ html, body {
 .header-carousel__indicator--active {
     background-color: #fd926d;
 }
+/*.slick-active {*/
+    /*background-color: #fd926d;*/
+/*}*/
 /*Адаптив для блока header-carousel*/
 @media all and (max-width: 1199px) {
     .header-carousel {
@@ -1013,10 +1024,13 @@ html, body {
     transform: none;
 }
 
+.carousel-product {
+    background-color:  #fd926d;
+}
+
 .carousel-product__wrap {
     display: flex;
     justify-content: center;
-    background-color:  #fd926d;
     padding: 30px 0;
 }
 
