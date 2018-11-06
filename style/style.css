@@ -160,11 +160,15 @@ html, body {
     width: 70px;
     border-left: 1px solid #444444;
     text-align: center;
+    position: relative;
 }
 .change_currency__current-currency {
     width: 45px;
 }
 .change_currency__currency-menu {
+    background-color: #000000;
+    outline: none;
+    border: none;
     text-decoration: none;
     display: block;
     width: 25px;
@@ -173,6 +177,17 @@ html, body {
 }
 .change_currency__currency-menu:hover {
     outline: 1px solid #444444;
+}
+.change_currency__currency-menu:focus {
+
+}
+.change_currency__choosing-blok {
+    position: absolute;
+    top: 0;
+    background-color: black;
+    color: #ffffff;
+    width: 100%;
+    height: auto;
 }
 .customer-account {
     border-left: 1px solid #444444;
