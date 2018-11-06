@@ -490,6 +490,10 @@ html, body {
     text-decoration: none;
     color: #949393;
 }
+.customer-shoping__busket-items:hover, .customer-shoping__busket-price:hover {
+    color: #dd6b44;
+    transition: 0.3s;
+}
 .customer-shoping__busket-price {
     padding-left: 4px;
 }
