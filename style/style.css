@@ -1004,17 +1004,7 @@ html, body {
     display: flex;
     text-align: center;
 }
-/*.slick-prev:before, .slick-next:before {*/
-    /*color:red !important;*/
-/*}*/
 
-/*.slick-next {*/
-    /*right: 0;*/
-/*}*/
-
-/*.slick-prev {*/
-    /*left: 0;*/
-/*}*/
 .controls__link {
     display: block;
     width: 53px;
