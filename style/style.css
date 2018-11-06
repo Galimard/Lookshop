@@ -250,12 +250,9 @@ html, body {
     color: transparent;
     transition: 0.5s;
 }
-.customer-account__sibmit-btn {
-    width: 60%;
-}
 .customer-account__submit {
     height: 30px;
-    width: 100%;
+    width: 60%;
     outline: none;
     color: #ffffff;
     font-size: 1.2rem;
@@ -342,6 +339,7 @@ html, body {
     }
     .customer-account__submit {
         height: 60px;
+        font-size: 28px;
     }
     .search {
         width: 100px;
@@ -373,6 +371,9 @@ html, body {
         font-size: 23px;
     }
     .customer-account__input {
+        font-size: 20px;
+    }
+    .customer-account__submit {
         font-size: 20px;
     }
 }
