@@ -1338,15 +1338,15 @@ html, body {
         justify-content: center;
     }
     .product-item__img--adapt1 {
-        content: url("../img/photo25_adapt.jpg");
-        position: absolute;
-        bottom: 0;
+        /*content: url("../img/photo25_adapt.jpg");*/
+        /*position: absolute;*/
+        /*bottom: 0;*/
         padding-bottom: 30px;
     }
     .product-item__img--adapt2 {
-        content: url("../img/photo26_adapt.jpg");
-        position: absolute;
-        bottom: 0;
+        /*content: url("../img/photo26_adapt.jpg");*/
+        /*position: absolute;*/
+        /*bottom: 0;*/
         padding-bottom: 30px;
     }
     .product-item__text {
