@@ -152,6 +152,7 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
 }
 .change_currency {
     display: flex;
@@ -178,26 +179,96 @@ html, body {
     border-left: 1px solid #444444;
     border-right: 1px solid #444444;
     width: 128px;
+    position: relative;
 }
-.customer-account__name{
-    text-decoration: none;
+.customer-account__info {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    outline: none;
+    border: none;
     color: #ffffff;
+    font-family: ArialMT, arial, sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: -0.06px;
+    text-decoration: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
-.customer-account__name::before {
+.customer-account__info::before {
     display: block;
     width: 14px;
     height: 13px;
     content: "";
     background: url("../img/ico_contact_user.png") center no-repeat;
 }
-.customer-account__name:hover {
+.customer-account__info:hover {
     outline: 1px solid #444444;
     /*color: #fd926d;*/
     /*transition: 0.2s;*/
+}
+.customer-account__info:active~.customer-account__form {
+    display: flex;
+}
+.customer-account__info:focus~.customer-account__form {
+    display: flex;
+}
+.customer-account__form {
+    display: none;
+    position: absolute;
+    right: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 235px;
+    height: 125px;
+    z-index: 100;
+    background-color: #000000;
+}
+.customer-account__input {
+    outline: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    width: 95%;
+    height: 30px;
+    background-color: #000000;
+    border: 1px solid #444444;
+    padding-left: 7px;
+}
+.customer-account__input:hover {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+.customer-account__input:focus {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+.customer-account__input:focus {
+    display: flex;
+}
+.customer-account__input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+.customer-account__input:focus::placeholder {
+    color: transparent;
+    transition: 0.5s;
+}
+.customer-account__submit {
+    height: 30px;
+    width: 60%;
+    outline: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    background-color: #000000;
+    border: 1px solid #444444;
+    text-transform: uppercase;
+}
+.customer-account__submit:hover {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+.customer-account__submit:active {
+    transform: translateY(2px);
 }
 .search {
     display: flex;
@@ -230,7 +301,6 @@ html, body {
         justify-content: center;
         align-items: center;
         font-size: 30px;
-
     }
     .customer-care {
         line-height: 96px;
@@ -255,10 +325,24 @@ html, body {
     .customer-account {
         width: 385px;
     }
-    .customer-account__name::before{
+    .customer-account__info {
+        font-size: 30px;
+    }
+    .customer-account__info::before{
         width: 40px;
         height: 38px;
         background: url(../img/ico_contact_user_adapt.png) center no-repeat;
+    }
+    .customer-account__form {
+        width: 130%;
+        height: 250px;
+    }
+    .customer-account__input {
+        height: 60px;
+        font-size: 28px;
+    }
+    .customer-account__submit {
+        height: 60px;
     }
     .search {
         width: 100px;
@@ -286,9 +370,15 @@ html, body {
         height: 80px;
         line-height: 80px;
     }
+    .customer-account__info {
+        font-size: 23px;
+    }
+    .customer-account__input {
+        font-size: 20px;
+    }
 }
 @media all and (max-width: 337px) {
-    .customer-account__name::before {
+    .customer-account__info::before {
         display: none;
     }
 }
