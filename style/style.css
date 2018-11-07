@@ -181,7 +181,6 @@ html, body {
 }
 .change_currency__currency-menu:hover {
     outline: 1px solid #444444;
-    transition: 0.2s;
 }
 .customer-account {
     border-left: 1px solid #444444;
@@ -216,7 +215,6 @@ html, body {
 }
 .customer-account__info:hover {
     outline: 1px solid #444444;
-    transition: 0.2s;
 }
 .customer-account__check {
     display: none;
@@ -289,7 +287,6 @@ html, body {
 }
 .search:hover {
     outline: 1px solid #444444;
-    transition: 0.2s;
 }
 .search__btn {
     display: block;
