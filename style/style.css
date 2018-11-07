@@ -1062,14 +1062,6 @@ html, body {
     transform: none;
 }
 
-.carousel {
-    display: none;
-}
-
-.carousel--active {
-    display: flex;
-}
-
 .carousel-product {
     background-color:  #fd926d;
 }
@@ -1078,6 +1070,14 @@ html, body {
     display: flex;
     justify-content: center;
     padding: 30px 0;
+}
+
+.carousel {
+    display: none;
+}
+
+.carousel--active {
+    display: flex;
 }
 
 .carousel__item {
@@ -1149,7 +1149,7 @@ html, body {
 .carousel-item__btn::after {
     content: "";
     display: block;
-    background: url("../img/plus.png") center no-repeat;
+    background: url("../img/plus.png") top no-repeat;
     width: 15px;
     height: 15px;
 }
@@ -1272,10 +1272,7 @@ html, body {
 }
 .product-item__buy {
     text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    padding-top: 12px;
     width: 120px;
     height: 32px;
     font-size: 1.1rem;

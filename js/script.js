@@ -1,28 +1,28 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
     //переключение вкладок в tabs-product
 
-    $('.tabs__menu-link').click(function(e) { //при клике на ссылку таба
-        e.preventDefault(); //останавливаем загрузку страницы сслыки
-
-        var item = $(this).closest('.tabs-menu__item');
-        var contentItem = $('.carousel');
-        var itemPos = item.data('class');
-
-        contentItem.filter('.carousel-'+itemPos)
-            .add(item)
-            .addClass('carousel--active')
-            .siblings()
-            .removeClass('carousel--active');
-
-        $('.carousel-first').slick({
-            slidesToShow: 6,
-            slidesToScroll: 1,
-            appendArrows: $('.controls'),
-            prevArrow: '<a href="#" class="controls__link controls-link__left"></a>',
-            nextArrow: '<a href="#" class="controls__link controls-link__right"></a>',
-        });
-    });
+    // $('.tabs__menu-link').click(function(e) { //при клике на ссылку таба
+    //     e.preventDefault(); //останавливаем загрузку страницы сслыки
+    //
+    //     var item = $(this).closest('.tabs-menu__item');
+    //     var contentItem = $('.carousel');
+    //     var itemPos = item.data('class');
+    //
+    //     contentItem.filter('.carousel-'+itemPos)
+    //         .add(item)
+    //         .addClass('carousel--active')
+    //         .siblings()
+    //         .removeClass('carousel--active');
+    //
+    //     $('.carousel-first').slick({
+    //         slidesToShow: 6,
+    //         slidesToScroll: 1,
+    //         appendArrows: $('.controls'),
+    //         prevArrow: '<a href="#" class="controls__link controls-link__left"></a>',
+    //         nextArrow: '<a href="#" class="controls__link controls-link__right"></a>',
+    //     });
+    // });
 
     //слайдер в хедере
 
@@ -32,6 +32,8 @@ $(document).ready(function(){
         prevArrow: '<a href="#" class="header-carousel__prev"></a>',
         nextArrow: '<a href="#" class="header-carousel__next"></a>',
     });
+
+});
 
     //слайдер в carousel-product
 
