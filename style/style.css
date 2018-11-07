@@ -1148,6 +1148,9 @@ html, body {
     font-size: 12px;
     text-transform: uppercase;
 }
+.banners__sign-link:hover {
+    box-shadow: 2px 2px 3px rgba(79, 175, 160, 0.8);
+}
 @media all and (max-width: 970px) {
     .banners {
         padding: 33px 15px;
