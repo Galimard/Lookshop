@@ -1220,17 +1220,29 @@ html, body {
     color:  #555555;
     font-size: 1.3rem;
     font-weight: 400;
-    -webkit-transition: background-color 0.3s, color 0.3s;
-    -moz-transition: background-color 0.3s, color 0.3s;
-    -ms-transition: background-color 0.3s, color 0.3s;
-    -o-transition: background-color 0.3s, color 0.3s;
-    transition: background-color 0.3s, color 0.3s;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+.tabs-menu__item--active {
+    background-color:  #fd926d;
+}
+
+.tabs-menu__item:hover,
+.tabs-menu__item:active {
+    background-color:  #fd926d;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
 }
 
 .tabs__menu-link:hover,
-.tabs__menu-link:active,
-.tabs__menu-link--active {
-    background-color:  #fd926d;
+.tabs-menu__item--active a{
     color: #ffffff;
 }
 
@@ -1238,17 +1250,7 @@ html, body {
     display: flex;
     text-align: center;
 }
-/*.slick-prev:before, .slick-next:before {*/
-    /*color:red !important;*/
-/*}*/
 
-/*.slick-next {*/
-    /*right: 0;*/
-/*}*/
-
-/*.slick-prev {*/
-    /*left: 0;*/
-/*}*/
 .controls__link {
     display: block;
     width: 53px;
@@ -1293,10 +1295,6 @@ html, body {
     transform: none;
 }
 
-#carousel-two, #carousel-three, #carousel-four {
-    display: none;
-}
-
 .carousel-product {
     background-color:  #fd926d;
 }
@@ -1304,13 +1302,21 @@ html, body {
 .carousel-product__wrap {
     display: flex;
     justify-content: center;
-    padding: 30px 0;
+}
+
+.carousel {
+    display: none;
+}
+
+.carousel--active {
+    display: flex;
 }
 
 .carousel__item {
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 220px !important;
     height: 395px;
     margin-left: 15px;
     margin-right: 15px;
@@ -1319,6 +1325,11 @@ html, body {
     -ms-transition: transform 0.3s;
     -o-transition: transform 0.3s;
     transition: transform 0.3s;
+}
+
+.carousel.slick-slider .slick-track, 
+.carousel.slick-slider .slick-list {
+	padding: 15px 0;
 }
 
 .carousel-item__img {
@@ -1376,9 +1387,14 @@ html, body {
 .carousel-item__btn::after {
     content: "";
     display: block;
-    background: url("../img/plus.png") center no-repeat;
+    background: url("../img/plus.png") top no-repeat;
     width: 15px;
     height: 15px;
+    margin-left: 4px;
+}
+
+.carousel-item__btn:hover {
+    box-shadow: 0 3px 3px rgba(221, 107, 68, 0.8);
 }
 
 .carousel-item__sale {
@@ -1405,6 +1421,10 @@ html, body {
     text-decoration: none;
     text-align: center;
     padding: 41px;
+}
+
+.carousel-item__block-btn img {
+    display: inline;
 }
 
 .block-btn__text {
@@ -1499,10 +1519,6 @@ html, body {
 }
 .product-item__buy {
     text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     width: 120px;
     height: 32px;
     font-size: 1.1rem;
@@ -1511,6 +1527,10 @@ html, body {
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: -0.5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 .product-item__buy:hover {
     box-shadow: 0 3px 3px rgba(221, 107, 68, 0.8);
