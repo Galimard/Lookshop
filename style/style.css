@@ -81,7 +81,7 @@
 }
 
 @font-face {
-    font-family: 'HelveticaNeueLTStd';
+    font-family: 'Helvetica Neue LT Std - Lt';
     src: url('../fonts/HelveticaNeueLTStd-Lt.woff2') format('woff2');
     src: url('../fonts/HelveticaNeueLTStd-Lt.woff') format('woff');
     font-weight: 400;
@@ -108,6 +108,13 @@
     font-family: 'Helvetica Neue LT Std - Ult Lt Cn';
     src: url('../fonts/HelveticaNeueLTStd-UltLtCn.woff2') format('woff2');
     src: url('../fonts/HelveticaNeueLTStd-UltLtCn.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica Neue LT Std Cn';
+    src: url('../fonts/HelveticaNeueLTStd-Cn.woff2') format('woff2');
+    src: url('../fonts/HelveticaNeueLTStd-Cn.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
@@ -1047,6 +1054,7 @@ html, body {
     height: 340px;
 }
 .banners__wrap-row {
+    position: relative;
     display: flex;
     width: 50%;
     height: 100%;
@@ -1108,14 +1116,36 @@ html, body {
     font-size: 34px;
     text-transform: uppercase;
 }
+.banners__sign-four {
+    width: 120px;
+    bottom: 18px;
+    left: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .banners__sign-text {
+    position: relative;
     text-align: center;
     width: 118px;
     color: #ffffff;
-    font-family: 'HelveticaNeueLTStd Hv Cn', arial, sans-serif;
+    font-family: 'Helvetica Neue LT Std Cn', arial, sans-serif;
     font-size: 36px;
     font-weight: 400;
     line-height: 30px;
+    text-transform: uppercase;
+    padding-bottom: 19px;
+}
+.banners__sign-link {
+    outline: none;
+    border: none;
+    width: 98px;
+    height: 29px;
+    background-color: #4fafa0;
+    color: #ffffff;
+    font-family: "Helvetica Neue LT Std - Lt", arial, sans-serif;
+    font-size: 12px;
     text-transform: uppercase;
 }
 @media all and (max-width: 970px) {
