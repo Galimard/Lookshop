@@ -139,6 +139,21 @@ html, body {
     margin: 0 auto;
 }
 
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.menu-list__item {
+    list-style: none;
+}
+
+.menu-list__link {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 .header {
     font-family: ArialMT, arial, sans-serif;
 }
@@ -793,7 +808,12 @@ html, body {
     }
 }
 /*Окончание адатива для блока header-carousel*/
-.wrap-flex {
+
+.subscribe {
+    background-color:  #ededed;
+}
+
+.subscribe__flex {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -802,25 +822,6 @@ html, body {
     justify-content: space-between;
     -ms-align-items: center;
     align-items: center;
-}
-
-.menu-list {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-}
-
-.menu-list__item {
-    list-style: none;
-}
-
-.menu-list__link {
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.subscribe {
-    background-color:  #ededed;
 }
 
 .subscribe__email {
@@ -955,7 +956,7 @@ html, body {
     .subscribe {
         background-color: #ffffff;
     }
-    .subscribe--botomm {
+    .subscribe-bottom {
         margin-bottom: 20px;
     }
     .subscribe__text--disabled {
