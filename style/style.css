@@ -169,6 +169,10 @@ html, body {
     letter-spacing: -0.06px;
     line-height: 30px;
 }
+.customer-info__customer-care-tel {
+    text-decoration: none;
+    color: #ffffff;
+}
 .customer-info-change {
     width: 235px;
     display: flex;
@@ -191,8 +195,7 @@ html, body {
     text-decoration: none;
     display: block;
     width: 25px;
-    color: #c1c1c1;
-    text-align: center;
+    background: url("../img/ico_arrow_down_grey.png") center no-repeat;
 }
 .change_currency__currency-menu:hover {
     outline: 1px solid #444444;
@@ -324,7 +327,7 @@ html, body {
         align-items: center;
         font-size: 30px;
     }
-    .customer-care {
+    .customer-info__customer-care {
         line-height: 96px;
         text-align: center;
         width: 100%;
