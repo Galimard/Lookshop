@@ -573,7 +573,7 @@ html, body {
         width: 22px;
         height: 20px;
     }
-    .burger-line {
+    .burger__line {
         display: block;
         cursor: pointer;
         height: 4px;
@@ -581,16 +581,16 @@ html, body {
         background-color: #ffffff;
         border-radius: 2px;
     }
-    .burger:hover .burger-line--disable {
+    .burger:hover .burger__line:nth-child(2) {
         display: none;
     }
-    .burger:hover .burger-line--top {
+    .burger:hover .burger__line:first-child {
         position: absolute;
         top: 7px;
         transform: rotate(45deg);
         transition: 0.5s;
     }
-    .burger:hover .burger-line--bottom {
+    .burger:hover .burger__line:last-child {
         position: absolute;
         top: 7px;
         transform: rotate(-45deg);
