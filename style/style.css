@@ -739,9 +739,17 @@ html, body {
     box-shadow: 0 3px 3px rgba(221, 107, 68, 0.8);
     transition: 0.2s;
 }
-.header-carousel__btn-arrow {
-    padding-left: 20px;
+.header-carousel__btn::after {
+    display: block;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url("../img/arrow-right.png") center center no-repeat;
+    margin-left: 5px;
 }
+/*.header-carousel__btn-arrow {*/
+    /*padding-left: 20px;*/
+/*}*/
 .header-carousel__prev {
     position: absolute;
     top: 162px;
