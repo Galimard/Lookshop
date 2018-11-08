@@ -435,21 +435,22 @@ html, body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 435px;
+    width: 440px;
     font-size: 16px;
     letter-spacing: -0.08px;
 }
 .top_menu__item {
     text-decoration: none;
     color: #000000;
+    padding: 10px;
 }
 .top_menu__item::after {
     float: right;
     display: block;
     content: "";
-    width: 15px;
+    width: 18px;
     height: 18px;
-    background: url("../img/ico_nav_arrow_down.png") center no-repeat;
+    background: url("../img/ico_nav_arrow_down.png") center center no-repeat;
 }
 .top_menu__item:hover::after{
     transform: rotateZ(-90deg);
@@ -488,7 +489,7 @@ html, body {
     text-decoration: none;
     width: 30px;
     height: 100%;
-    color: #c1c1c1;
+    background: url("../img/ico_arrow_down_grey.png") center center no-repeat;
 }
 .customer-shoping__wrap-busket-info {
     padding: 0 9px;
