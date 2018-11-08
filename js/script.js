@@ -21,6 +21,7 @@ $(document).ready(function() {
 
     //слайдер в хедере
     $('.header-carousel').slick({
+        infinite: true,
         arrows: true,
         dots: true,
         prevArrow: '<a href="#" class="header-carousel__prev"></a>',
@@ -32,6 +33,7 @@ $(document).ready(function() {
 //Первоначальная инициализация слайдеров табов
 function initializeTabs(){
     $('.carousel--active').slick({
+        infinite: true,
         slidesToShow: 5,
         slidesToScroll: 1,
         appendArrows: $('.controls'),
@@ -47,6 +49,7 @@ function initializeCurrentSlider($currentTab){
     $('.carousel.slick-slider').slick('destroy');
 
     $($currentTab).slick({
+        infinite: true,
         slidesToShow: 5,
         slidesToScroll: 1,
         appendArrows: $('.controls'),
