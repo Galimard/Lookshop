@@ -1134,6 +1134,18 @@ html, body {
     font-family: "Helvetica Neue LT Std - Ult Lt Cn", arial, sans-serif;
     font-size: 34px;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.banners__sign-three:after {
+    margin-left: 5px;
+    display: block;
+    content: "";
+    width: 11px;
+    height: 11px;
+    background: url("../img/arrow-right-1.png") center center no-repeat;
 }
 .banners__sign-four {
     width: 120px;
@@ -1158,8 +1170,9 @@ html, body {
 }
 .banners__sign-link {
     cursor: pointer;
-    outline: none;
-    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 98px;
     height: 29px;
     background-color: #4fafa0;
@@ -1167,6 +1180,13 @@ html, body {
     font-family: "Helvetica Neue LT Std - Lt", arial, sans-serif;
     font-size: 12px;
     text-transform: uppercase;
+}
+.banners__arrow {
+    display: block;
+    content: "";
+    background: url("../img/arrow-right.png") center center no-repeat;
+    width: 15px;
+    height: 7px;
 }
 .banners__sign-link:hover {
     box-shadow: 2px 2px 3px rgba(79, 175, 160, 0.8);
