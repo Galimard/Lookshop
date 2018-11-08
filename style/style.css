@@ -173,14 +173,14 @@ html, body {
     text-decoration: none;
     color: #ffffff;
 }
-.customer-info-change {
+.customer-info__change {
     width: 235px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: relative;
 }
-.change_currency {
+.customer-info__change-currency {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -188,26 +188,26 @@ html, body {
     border-left: 1px solid #444444;
     text-align: center;
 }
-.change_currency__current-currency {
+.customer-info__current-currency {
     width: 45px;
 }
-.change_currency__currency-menu {
+.customer-info__currency-menu {
     text-decoration: none;
     display: block;
     width: 25px;
     background: url("../img/ico_arrow_down_grey.png") center no-repeat;
 }
-.change_currency__currency-menu:hover {
+.customer-info__currency-menu:hover {
     outline: 1px solid #444444;
 }
-.customer-account {
+.customer-info__customer-account {
     border-left: 1px solid #444444;
     border-right: 1px solid #444444;
     width: 128px;
     position: relative;
 }
 
-.customer-account__info {
+.customer-info__customer-account-info {
     width: 100%;
     height: 100%;
     background-color: #000000;
@@ -224,23 +224,23 @@ html, body {
     justify-content: space-around;
     align-items: center;
 }
-.customer-account__info::before {
+.customer-info__customer-account-info::before {
     display: block;
     width: 14px;
     height: 13px;
     content: "";
     background: url("../img/ico_contact_user.png") center no-repeat;
 }
-.customer-account__info:hover {
+.customer-info__customer-account-info:hover {
     outline: 1px solid #444444;
 }
-.customer-account__check {
+.customer-info__check {
     display: none;
 }
-.customer-account__check:checked ~ .customer-account__form {
+.customer-info__check:checked ~ .customer-info__form {
     display: flex;
 }
-.customer-account__form {
+.customer-info__form {
     display: none;
     position: absolute;
     right: 0;
@@ -252,7 +252,7 @@ html, body {
     z-index: 100;
     background-color: #000000;
 }
-.customer-account__input {
+.customer-info__input {
     outline: none;
     color: #ffffff;
     font-size: 1.2rem;
@@ -262,22 +262,22 @@ html, body {
     border: 1px solid #444444;
     padding-left: 7px;
 }
-.customer-account__input:hover {
+.customer-info__input:hover {
     border: 1px solid rgba(255, 255, 255, 0.7);
     transition: 0.2s;
 }
-.customer-account__input:focus {
+.customer-info__input:focus {
     border: 1px solid rgba(255, 255, 255, 0.7);
     transition: 0.2s;
 }
-.customer-account__input::placeholder {
+.customer-info__input::placeholder {
     color: rgba(255, 255, 255, 0.7);
 }
-.customer-account__input:focus::placeholder {
+.customer-info__input:focus::placeholder {
     color: transparent;
     transition: 0.5s;
 }
-.customer-account__submit {
+.customer-info__submit {
     height: 30px;
     width: 60%;
     outline: none;
@@ -287,11 +287,11 @@ html, body {
     border: 1px solid #444444;
     text-transform: uppercase;
 }
-.customer-account__submit:hover {
+.customer-info__submit:hover {
     border: 1px solid rgba(255, 255, 255, 0.7);
     transition: 0.2s;
 }
-.customer-account__submit:active {
+.customer-info__submit:active {
     transform: translateY(2px);
     transition: 0.2s;
 }
@@ -334,39 +334,39 @@ html, body {
         background-color: #fafafa;
         color: #838383;
     }
-    .customer-info-change {
+    .customer-info__change {
         line-height: 96px;
         width: 100%;
     }
-    .change_currency {
+    .customer-info__change-currency {
         width: 155px;
     }
-    .change_currency__current-currency {
+    .customer-info__current-currency {
         width: 60%;
     }
-    .change_currency__currency-menu {
+    .customer-info__currency-menu {
         width: 40%;
     }
-    .customer-account {
+    .customer-info__customer-account {
         width: 385px;
     }
-    .customer-account__info {
+    .customer-info__customer-account-info {
         font-size: 30px;
     }
-    .customer-account__info::before{
+    .customer-info__customer-account-info::before{
         width: 40px;
         height: 38px;
         background: url(../img/ico_contact_user_adapt.png) center no-repeat;
     }
-    .customer-account__form {
+    .customer-info__form {
         width: 130%;
         height: 250px;
     }
-    .customer-account__input {
+    .customer-info__input {
         height: 60px;
         font-size: 28px;
     }
-    .customer-account__submit {
+    .customer-info__submit {
         height: 60px;
         font-size: 28px;
     }
@@ -380,7 +380,7 @@ html, body {
     }
 }
 @media all and (max-width: 461px) {
-    .change_currency__current-currency span {
+    .customer-info__current-currency span {
         display: none;
     }
 }
@@ -392,22 +392,22 @@ html, body {
         height: 80px;
         line-height: 80px;
     }
-    .customer-info-change {
+    .customer-info__change {
         height: 80px;
         line-height: 80px;
     }
-    .customer-account__info {
+    .customer-info__customer-account-info {
         font-size: 23px;
     }
-    .customer-account__input {
+    .customer-info__input {
         font-size: 20px;
     }
-    .customer-account__submit {
+    .customer-info__submit {
         font-size: 20px;
     }
 }
 @media all and (max-width: 337px) {
-    .customer-account__info::before {
+    .customer-info__customer-account-info::before {
         display: none;
     }
 }
