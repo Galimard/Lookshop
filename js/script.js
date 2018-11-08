@@ -20,24 +20,43 @@ $(document).ready(function() {
     });
 
     //слайдер в хедере
-    $('.header-carousel').slick({
-        arrows: true,
-        dots: true,
-        prevArrow: '<a href="#" class="header-carousel__prev"></a>',
-        nextArrow: '<a href="#" class="header-carousel__next"></a>',
-    });
+    if($('.header-carousel')) {
+        $('.header-carousel').slick({
+            infinite: true,
+            arrows: true,
+            dots: true,
+            prevArrow: '<a href="#" class="header-carousel__prev"></a>',
+            nextArrow: '<a href="#" class="header-carousel__next"></a>',
+        });
+    }
 
 });
 
 //Первоначальная инициализация слайдеров табов
 function initializeTabs(){
     $('.carousel--active').slick({
+        infinite: true,
         slidesToShow: 5,
         slidesToScroll: 1,
         appendArrows: $('.controls'),
         prevArrow: '<a href="#" class="controls__link controls-link__left"></a>',
         nextArrow: '<a href="#" class="controls__link controls-link__right"></a>',
-    });
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    unslick: true
+                }
+            }
+        ]
+    })
 }
 
 //Инициализирует слайдер на активной вкладке
@@ -47,11 +66,27 @@ function initializeCurrentSlider($currentTab){
     $('.carousel.slick-slider').slick('destroy');
 
     $($currentTab).slick({
+        infinite: true,
         slidesToShow: 5,
         slidesToScroll: 1,
         appendArrows: $('.controls'),
         prevArrow: '<a href="#" class="controls__link controls-link__left"></a>',
         nextArrow: '<a href="#" class="controls__link controls-link__right"></a>',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    unslick: true
+                }
+            }
+        ]
     });
 
 }
