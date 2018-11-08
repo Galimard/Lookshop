@@ -1424,19 +1424,27 @@ html, body {
     top: 75px;
     left: 43px;
     display: none;
-    align-items: center;
     border-radius: 50%;
     background-color:  #3d3d3d;
     width: 134px;
     height: 134px;
     text-decoration: none;
     text-align: center;
-    padding: 41px;
+    padding: 40px;
 }
 
-.carousel-item__block-btn img {
-    display: inline;
+.carousel-item__block-btn::before {
+    content: '';
+    display: block;
+    background: url("../img/cart.png") center no-repeat;
+    width: 33px;
+    height: 33px;
+    margin: 0 auto;
 }
+
+/*.carousel-item__block-btn img {*/
+    /*display: inline;*/
+/*}*/
 
 .block-btn__text {
     display: inline-block;
@@ -1448,7 +1456,7 @@ html, body {
 }
 
 .carousel__item:hover .carousel-item__block-btn {
-    display: flex;
+    display: block;
 }
 
 .block-btn__text:hover {
