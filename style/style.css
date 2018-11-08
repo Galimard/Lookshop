@@ -334,6 +334,9 @@ html, body {
         background-color: #fafafa;
         color: #838383;
     }
+    .customer-info__customer-care-tel {
+        color: #838383;
+    }
     .customer-info__change {
         line-height: 96px;
         width: 100%;
@@ -346,6 +349,7 @@ html, body {
     }
     .customer-info__currency-menu {
         width: 40%;
+        background: url("../img/ico_arrow_down_big.png") center center no-repeat;
     }
     .customer-info__customer-account {
         width: 385px;
@@ -979,6 +983,9 @@ html, body {
     }
     .wrap-flex-adapt {
         flex-direction: column;
+    }
+    .subscribe__form {
+        width: 100%;
     }
     .subscribe__email {
         width: 100%;
@@ -2117,8 +2124,7 @@ html, body {
 }
 .footer-nav__item:hover {
     color: #dd6b44;
-    transition: 0.2s;
-    text-decoration: underline;
+    transition: 0.3s;
 }
 .footer-nav__item--border {
     border-right: 1px solid #8d8d8d;
