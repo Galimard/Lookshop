@@ -1341,6 +1341,7 @@ html, body {
 .carousel.slick-slider .slick-track, 
 .carousel.slick-slider .slick-list {
 	padding: 15px 0;
+    display: flex;
 }
 
 .carousel-item__img {
@@ -1408,7 +1409,7 @@ html, body {
     box-shadow: 0 3px 3px rgba(221, 107, 68, 0.8);
 }
 
-.carousel-item__sale {
+.carousel-item--sale {
     position: absolute;
     top: 0;
     left: 0;
@@ -1441,10 +1442,6 @@ html, body {
     height: 33px;
     margin: 0 auto;
 }
-
-/*.carousel-item__block-btn img {*/
-    /*display: inline;*/
-/*}*/
 
 .block-btn__text {
     display: inline-block;
