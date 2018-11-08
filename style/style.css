@@ -173,14 +173,14 @@ html, body {
     text-decoration: none;
     color: #ffffff;
 }
-.customer-info-change {
+.customer-info__change {
     width: 235px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: relative;
 }
-.change_currency {
+.customer-info__change-currency {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -188,26 +188,26 @@ html, body {
     border-left: 1px solid #444444;
     text-align: center;
 }
-.change_currency__current-currency {
+.customer-info__current-currency {
     width: 45px;
 }
-.change_currency__currency-menu {
+.customer-info__currency-menu {
     text-decoration: none;
     display: block;
     width: 25px;
     background: url("../img/ico_arrow_down_grey.png") center no-repeat;
 }
-.change_currency__currency-menu:hover {
+.customer-info__currency-menu:hover {
     outline: 1px solid #444444;
 }
-.customer-account {
+.customer-info__customer-account {
     border-left: 1px solid #444444;
     border-right: 1px solid #444444;
     width: 128px;
     position: relative;
 }
 
-.customer-account__info {
+.customer-info__customer-account-info {
     width: 100%;
     height: 100%;
     background-color: #000000;
@@ -224,23 +224,23 @@ html, body {
     justify-content: space-around;
     align-items: center;
 }
-.customer-account__info::before {
+.customer-info__customer-account-info::before {
     display: block;
     width: 14px;
     height: 13px;
     content: "";
     background: url("../img/ico_contact_user.png") center no-repeat;
 }
-.customer-account__info:hover {
+.customer-info__customer-account-info:hover {
     outline: 1px solid #444444;
 }
-.customer-account__check {
+.customer-info__check {
     display: none;
 }
-.customer-account__check:checked ~ .customer-account__form {
+.customer-info__check:checked ~ .customer-info__form {
     display: flex;
 }
-.customer-account__form {
+.customer-info__form {
     display: none;
     position: absolute;
     right: 0;
@@ -252,7 +252,7 @@ html, body {
     z-index: 100;
     background-color: #000000;
 }
-.customer-account__input {
+.customer-info__input {
     outline: none;
     color: #ffffff;
     font-size: 1.2rem;
@@ -262,22 +262,22 @@ html, body {
     border: 1px solid #444444;
     padding-left: 7px;
 }
-.customer-account__input:hover {
+.customer-info__input:hover {
     border: 1px solid rgba(255, 255, 255, 0.7);
     transition: 0.2s;
 }
-.customer-account__input:focus {
+.customer-info__input:focus {
     border: 1px solid rgba(255, 255, 255, 0.7);
     transition: 0.2s;
 }
-.customer-account__input::placeholder {
+.customer-info__input::placeholder {
     color: rgba(255, 255, 255, 0.7);
 }
-.customer-account__input:focus::placeholder {
+.customer-info__input:focus::placeholder {
     color: transparent;
     transition: 0.5s;
 }
-.customer-account__submit {
+.customer-info__submit {
     height: 30px;
     width: 60%;
     outline: none;
@@ -287,11 +287,11 @@ html, body {
     border: 1px solid #444444;
     text-transform: uppercase;
 }
-.customer-account__submit:hover {
+.customer-info__submit:hover {
     border: 1px solid rgba(255, 255, 255, 0.7);
     transition: 0.2s;
 }
-.customer-account__submit:active {
+.customer-info__submit:active {
     transform: translateY(2px);
     transition: 0.2s;
 }
@@ -334,39 +334,43 @@ html, body {
         background-color: #fafafa;
         color: #838383;
     }
-    .customer-info-change {
+    .customer-info__customer-care-tel {
+        color: #838383;
+    }
+    .customer-info__change {
         line-height: 96px;
         width: 100%;
     }
-    .change_currency {
+    .customer-info__change-currency {
         width: 155px;
     }
-    .change_currency__current-currency {
+    .customer-info__current-currency {
         width: 60%;
     }
-    .change_currency__currency-menu {
+    .customer-info__currency-menu {
         width: 40%;
+        background: url("../img/ico_arrow_down_big.png") center center no-repeat;
     }
-    .customer-account {
+    .customer-info__customer-account {
         width: 385px;
     }
-    .customer-account__info {
+    .customer-info__customer-account-info {
         font-size: 30px;
     }
-    .customer-account__info::before{
+    .customer-info__customer-account-info::before{
         width: 40px;
         height: 38px;
         background: url(../img/ico_contact_user_adapt.png) center no-repeat;
     }
-    .customer-account__form {
+    .customer-info__form {
         width: 130%;
         height: 250px;
     }
-    .customer-account__input {
+    .customer-info__input {
         height: 60px;
         font-size: 28px;
     }
-    .customer-account__submit {
+    .customer-info__submit {
         height: 60px;
         font-size: 28px;
     }
@@ -380,7 +384,7 @@ html, body {
     }
 }
 @media all and (max-width: 461px) {
-    .change_currency__current-currency span {
+    .customer-info__current-currency span {
         display: none;
     }
 }
@@ -392,30 +396,32 @@ html, body {
         height: 80px;
         line-height: 80px;
     }
-    .customer-info-change {
+    .customer-info__change {
         height: 80px;
         line-height: 80px;
     }
-    .customer-account__info {
+    .customer-info__customer-account-info {
         font-size: 23px;
     }
-    .customer-account__input {
+    .customer-info__input {
         font-size: 20px;
     }
-    .customer-account__submit {
+    .customer-info__submit {
         font-size: 20px;
     }
 }
 @media all and (max-width: 337px) {
-    .customer-account__info::before {
+    .customer-info__customer-account-info::before {
         display: none;
     }
 }
 /*Окончание адаптива для блока customer-info*/
 .navigation {
-    padding: 20px calc((100% - 970px) / 2);
+    max-width: 970px;
+    margin: 0 auto;
 }
 .navigation-wrap {
+    padding: 20px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -435,21 +441,22 @@ html, body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 435px;
+    width: 440px;
     font-size: 16px;
     letter-spacing: -0.08px;
 }
 .top_menu__item {
     text-decoration: none;
     color: #000000;
+    padding: 10px;
 }
 .top_menu__item::after {
     float: right;
     display: block;
     content: "";
-    width: 15px;
+    width: 18px;
     height: 18px;
-    background: url("../img/ico_nav_arrow_down.png") center no-repeat;
+    background: url("../img/ico_nav_arrow_down.png") center center no-repeat;
 }
 .top_menu__item:hover::after{
     transform: rotateZ(-90deg);
@@ -488,7 +495,7 @@ html, body {
     text-decoration: none;
     width: 30px;
     height: 100%;
-    color: #c1c1c1;
+    background: url("../img/ico_arrow_down_grey.png") center center no-repeat;
 }
 .customer-shoping__wrap-busket-info {
     padding: 0 9px;
@@ -572,7 +579,7 @@ html, body {
         width: 22px;
         height: 20px;
     }
-    .burger-line {
+    .burger__line {
         display: block;
         cursor: pointer;
         height: 4px;
@@ -580,16 +587,16 @@ html, body {
         background-color: #ffffff;
         border-radius: 2px;
     }
-    .burger:hover .burger-line--disable {
+    .burger:hover .burger__line:nth-child(2) {
         display: none;
     }
-    .burger:hover .burger-line--top {
+    .burger:hover .burger__line:first-child {
         position: absolute;
         top: 7px;
         transform: rotate(45deg);
         transition: 0.5s;
     }
-    .burger:hover .burger-line--bottom {
+    .burger:hover .burger__line:last-child {
         position: absolute;
         top: 7px;
         transform: rotate(-45deg);
@@ -738,9 +745,17 @@ html, body {
     box-shadow: 0 3px 3px rgba(221, 107, 68, 0.8);
     transition: 0.2s;
 }
-.header-carousel__btn-arrow {
-    padding-left: 20px;
+.header-carousel__btn::after {
+    display: block;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url("../img/arrow-right.png") center center no-repeat;
+    margin-left: 5px;
 }
+/*.header-carousel__btn-arrow {*/
+    /*padding-left: 20px;*/
+/*}*/
 .header-carousel__prev {
     position: absolute;
     top: 162px;
@@ -971,6 +986,9 @@ html, body {
     .wrap-flex-adapt {
         flex-direction: column;
     }
+    .subscribe__form {
+        width: 100%;
+    }
     .subscribe__email {
         width: 100%;
         position: relative;
@@ -1107,14 +1125,12 @@ html, body {
     top: 69px;
     width: 217px;
     height: 197px;
-    background: url("../img/1.png") center no-repeat;
 }
 .banners__sign-two {
     left: 29px;
     top: 17px;
     width: 131px;
     height: 135px;
-    background: url("../img/2.png") center no-repeat;
 }
 .banners__sign-three {
     bottom: 15px;
@@ -1125,6 +1141,18 @@ html, body {
     font-family: "Helvetica Neue LT Std - Ult Lt Cn", arial, sans-serif;
     font-size: 34px;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.banners__sign-three:after {
+    margin-left: 5px;
+    display: block;
+    content: "";
+    width: 11px;
+    height: 11px;
+    background: url("../img/arrow-right-1.png") center center no-repeat;
 }
 .banners__sign-four {
     width: 120px;
@@ -1149,8 +1177,9 @@ html, body {
 }
 .banners__sign-link {
     cursor: pointer;
-    outline: none;
-    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 98px;
     height: 29px;
     background-color: #4fafa0;
@@ -1158,6 +1187,13 @@ html, body {
     font-family: "Helvetica Neue LT Std - Lt", arial, sans-serif;
     font-size: 12px;
     text-transform: uppercase;
+}
+.banners__arrow {
+    display: block;
+    content: "";
+    background: url("../img/arrow-right.png") center center no-repeat;
+    width: 15px;
+    height: 7px;
 }
 .banners__sign-link:hover {
     box-shadow: 2px 2px 3px rgba(79, 175, 160, 0.8);
@@ -1501,6 +1537,17 @@ html, body {
     justify-content: space-between;
     align-items: center;
     background-color: #f7f7f7;
+    position: relative;
+}
+.product-item--sale {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    background: url("../img/sale.jpg") center no-repeat;
+    width: 50px;
+    height: 50px;
+    z-index: 100;
 }
 .product-item__link-img {
     display: block;
@@ -1726,12 +1773,15 @@ html, body {
     padding: 0 20px;
 }
 .brands__items {
-    padding: 20px calc((100%  - 970px) / 2);
+    /*padding: 20px calc((100%  - 970px) / 2);*/
     width: 100%;
     height: 100px;
     border-bottom: 1px solid rgba(178, 178, 178, 0.5);
 }
 .brands-wrap {
+    max-width: 970px;
+    margin: 0 auto;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1827,13 +1877,18 @@ html, body {
 }
 /*Окончание адаптива для блока about-lookshop*/
 .pay-system {
-    padding: 18px calc((100% - 550px) / 2);
+    width: 100%;
+    padding: 20px 0;
+    background-color: #f7f7f7;
+}
+.pay-system__wrap {
+    width: 550px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #f7f7f7;
 }
 .pay-system__title {
     opacity: 0.5;
@@ -1890,13 +1945,18 @@ html, body {
     }
 }
 /*Окончание адаптива для блока pay-system*/
+.footer__content {
+    width: 100%;
+    padding: 35px 0;
+    background-color: #ededed;
+}
 .footer-wrap {
+    margin: 0 auto;
+    max-width: 970px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #ededed;
-    padding: 35px calc((100% - 970px) / 2);
 }
 .footer__menu-items {
     display: flex;
@@ -2056,8 +2116,14 @@ html, body {
     }
 }
 /*Окончание адаптива для основного контента в footer*/
+.footer__wrap--navigation {
+    width: 100%;
+    background-color: #000000;
+    padding: 30px 0;
+}
 .footer-navigation {
-    padding: 24px calc((100% - 970px) / 2);
+    margin: 0 auto;
+    max-width: 970px;
     background-color: #000000;
     display: flex;
     flex-direction: row;
@@ -2079,8 +2145,7 @@ html, body {
 }
 .footer-nav__item:hover {
     color: #dd6b44;
-    transition: 0.2s;
-    text-decoration: underline;
+    transition: 0.3s;
 }
 .footer-nav__item--border {
     border-right: 1px solid #8d8d8d;
@@ -2115,12 +2180,12 @@ input[type='radio'].visually-hidden {
 /*Адаптив для блока footer-navigation*/
 @media all and (max-width: 970px) {
     .footer-navigation {
-        padding: 24px 15px;
+        padding: 0 15px;
     }
 }
 @media all and (max-width: 640px) {
     .footer-navigation {
-        padding: 24px 30px;
+        padding: 0 30px;
     }
     .footer-nav {
         display: none;

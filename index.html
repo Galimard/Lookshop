@@ -16,19 +16,19 @@
                 <div class="customer-info__customer-care">custom care:
                     <a class="customer-info__customer-care-tel" href="tel:888-23-4567">888-23-4567</a>
                 </div>
-                <div class="customer-info-change">
-                    <div class="change_currency">
-                        <div class="change_currency__current-currency">$ <span>US</span></div>
-                        <a href="#" class="change_currency__currency-menu"></a>
+                <div class="customer-info__change">
+                    <div class="customer-info__change-currency">
+                        <div class="customer-info__current-currency">$ <span>US</span></div>
+                        <a href="#" class="customer-info__currency-menu"></a>
                     </div>
-                    <div class="customer-account">
-                        <input type="checkbox" id="account" class="customer-account__check">
-                        <label class="customer-account__info" for="account">my account</label>
-                        <div class="customer-account__form">
-                            <input class="customer-account__input customer-account__name" type="text" placeholder="your name">
-                            <input class="customer-account__input customer-account__email" type="email" placeholder="your email">
-                            <input class="customer-account__submit" type="submit" value="log in">
-                        </div>
+                    <div class="customer-info__customer-account">
+                        <input type="checkbox" id="account" class="customer-info__check">
+                        <label class="customer-info__customer-account-info" for="account">my account</label>
+                        <form class="customer-info__form">
+                            <input class="customer-info__input" type="text" placeholder="your name">
+                            <input class="customer-info__input" type="email" placeholder="your email">
+                            <button class="customer-info__submit" type="submit">log in</button>
+                        </form>
                     </div>
                     <div class="search">
                         <a href="#" class="search__btn"></a>
@@ -48,7 +48,7 @@
                     <div class="customer-shoping">
                     <div class="customer-shoping__choose-cart">
                         <span class="customer-shoping__cart-name">Your cart</span>
-                        <a href="#" class="customer-shoping__cart-choose-btn">&#9207;</a>
+                        <a href="#" class="customer-shoping__cart-choose-btn"></a>
                     </div>
                     <div class="customer-shoping__wrap-busket-info">
                         <a href="#" class="customer-shoping__busket-ico"></a>
@@ -62,9 +62,9 @@
                 <div class="top-menu-adapt top-menu-adapt--bottom">
                     <div class="top-menu-adapt__name">menu</div>
                     <a href="#" class="burger">
-                        <span class="burger-line burger-line--top"></span>
-                        <span class="burger-line burger-line--disable"></span>
-                        <span class="burger-line burger-line--bottom"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
                     </a>
                 </div>
             </div>
@@ -72,14 +72,14 @@
                 <div class="header-carousel__wrap slide1">
                     <div class="header-carousel__sign">
                         <a href="#" class="header-carousel__logo-banner"></a>
-                        <a href="#" class="header-carousel__btn">shop now <span class="header-carousel__btn-arrow">&#9205;</span></a>
+                        <a href="#" class="header-carousel__btn">shop now</a>
                     </div>
                     <div class="header-carousel__decore-line"></div>
                 </div>
                 <div class="header-carousel__wrap slide2">
                     <div class="header-carousel__sign">
                         <a href="#" class="header-carousel__logo-banner"></a>
-                        <a href="#" class="header-carousel__btn">shop now <span class="header-carousel__btn-arrow">&#9205;</span></a>
+                        <a href="#" class="header-carousel__btn">shop now</a>
                     </div>
                     <a href="#" class="header-carousel__prev"></a>
                     <a href="#" class="header-carousel__next"></a>
@@ -88,7 +88,7 @@
                 <div class="header-carousel__wrap slide3">
                     <div class="header-carousel__sign">
                         <a href="#" class="header-carousel__logo-banner"></a>
-                        <a href="#" class="header-carousel__btn">shop now <span class="header-carousel__btn-arrow">&#9205;</span></a>
+                        <a href="#" class="header-carousel__btn">shop now</a>
                     </div>
                     <a href="#" class="header-carousel__prev"></a>
                     <a href="#" class="header-carousel__next"></a>
@@ -101,7 +101,7 @@
             <div class="template-width subscribe__flex wrap-flex-adapt subscribe__height">
                 <div class="subscribe__email">
                     <span class="subscribe__text subscribe__text--disabled">Stay updated</span>
-                    <form action="#">
+                    <form class="subscribe__form" action="#">
                         <input type="email" title="email" placeholder="Your email address" class="subscribe__input">
                         <button type="submit" class="subscribe__btn btn"><img src="img/plus.png" alt="plus"></button>
                     </form>
@@ -118,17 +118,20 @@
             <div class="banners__wrap-column">
                 <a href="#" class="banners__item banners__banner-one">
                     <img class="banners__img" src="img/photo10.jpg" alt="banner">
-                    <div class="banners__sign banners__sign-one"></div>
+                    <div class="banners__sign banners__sign-one">
+                        <img src="img/1.png" alt="banner-text" title="banner-text">
+                    </div>
                 </a>
                 <div class="banners__wrap-row">
                     <a href="#" class="banners__item banners__banner-two">
                         <img class="banners__img" src="img/photo11.jpg" alt="banner">
-                        <div class="banners__sign banners__sign-two"></div>
+                        <div class="banners__sign banners__sign-two">
+                            <img src="img/2.png" alt="banner-text" title="banner-text">
+                        </div>
                     </a>
                     <a href="#" class="banners__item banners__banner-three">
                         <img class="banners__img" src="img/photo12.jpg" alt="banner">
-                        <div class="banners__sign banners__sign-three">best sellers &#707;
-                        </div>
+                        <div class="banners__sign banners__sign-three">best sellers</div>
                     </a>
                     <a href="#" class="banners__item banners__banner-four">
                         <img class="banners__img" src="img/photo13.jpg" alt="banner">
@@ -136,9 +139,9 @@
                             <div class="banners__sign-text">
                                 fall leather
                             </div>
-                            <button class="banners__sign-link">
-                                shop now &#9205;
-                            </button>
+                            <div class="banners__sign-link">
+                                shop now<span class="banners__arrow"></span>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -627,7 +630,8 @@
         <div class="sale-products">
             <div class="product-item">
                 <a href="#" class="product-item__link-img">
-                    <img class="product-item__img" src="img/photo20.jpg" alt="photo"></a>
+                    <img class="product-item__img" src="img/photo20.jpg" alt="photo">
+                </a>
                 <div class="product-item__text">
                     <div class="product-item__name">Nadia dress</div>
                     <div class="product-item__price">&#36;64.95</div>
@@ -638,6 +642,7 @@
                 <a href="#" class="product-item__link-img">
                     <img class="product-item__img product-item__img--adapt1" src="img/photo21.jpg" alt="photo">
                 </a>
+                <div class="product-item--sale"></div>
                 <div class="product-item__text">
                     <div class="product-item__name">Nadia dress</div>
                     <div class="product-item__price">&#36;64.95</div>
@@ -658,6 +663,7 @@
                 <a href="#" class="product-item__link-img">
                     <img class="product-item__img" src="img/photo23.jpg" alt="photo">
                 </a>
+                <div class="product-item--sale"></div>
                 <div class="product-item__text">
                     <div class="product-item__name">Nadia dress</div>
                     <div class="product-item__price">&#36;64.95</div>
@@ -694,89 +700,95 @@
     </main>
     <footer class="footer">
         <div class="pay-system">
-            <h4 class="pay-system__title">We accept</h4>
-            <a href="#" class="pay-system__item pay-system__item-01"></a>
-            <a href="#" class="pay-system__item pay-system__item-02"></a>
-            <a href="#" class="pay-system__item pay-system__item-03"></a>
-            <a href="#" class="pay-system__item pay-system__item-04"></a>
-            <a href="#" class="pay-system__item pay-system__item-05"></a>
-            <a href="#" class="pay-system__item pay-system__item-06"></a>
-            <a href="#" class="pay-system__item pay-system__item-07"></a>
-            <a href="#" class="pay-system__item pay-system__item-08"></a>
-            <a href="#" class="pay-system__item pay-system__item-09"></a>
-            <a href="#" class="pay-system__item pay-system__item-10"></a>
-            <a href="#" class="pay-system__item pay-system__item-11"></a>
-        </div>
-        <div class="footer-wrap">
-            <div class="footer__menu-items">
-                <div class="customer-service">
-                    <h3 class="customer-service__title">Customer Service</h3>
-                    <a href="#" class="customer-service__item footer__link">Contact</a>
-                    <a href="#" class="customer-service__item footer__link">FAQ</a>
-                    <a href="#" class="customer-service__item footer__link">Terms of payment</a>
-                    <a href="#" class="customer-service__item footer__link">Terms of sale</a>
-                    <a href="#" class="customer-service__item footer__link">Delivery terms and conditions</a>
-                    <a href="#" class="customer-service__item footer__link">Returns and Refunds</a>
-                </div>
-                <div class="information">
-                    <h3 class="information__title">Information</h3>
-                    <a href="#" class="information__item footer__link">Affiliate</a>
-                    <a href="#" class="information__item footer__link">Cookies</a>
-                    <a href="#" class="information__item footer__link">How to Shop</a>
-                    <a href="#" class="information__item footer__link">About Nelly</a>
-                    <a href="#" class="information__item footer__link">Investor relations</a>
-                </div>
-                <div class="campaigns">
-                    <h3 class="campaigns__title">Campaigns</h3>
-                    <a href="#" class="campaigns__item footer__link">Evening dresses</a>
-                    <a href="#" class="campaigns__item footer__link">Makeup</a>
-                    <a href="#" class="campaigns__item footer__link">Fashion forward</a>
-                    <a href="#" class="campaigns__item footer__link">training clothes</a>
-                    <a href="#" class="campaigns__item footer__link">Special Occasion Dresses</a>
-                </div>
-                <div class="stores">
-                    <h3 class="stores__title">Stores</h3>
-                    <a href="#" class="stores__item footer__link">Paris</a>
-                    <a href="#" class="stores__item footer__link">New York</a>
-                    <a href="#" class="stores__item footer__link">London</a>
-                    <a href="#" class="stores__item footer__link">Madrid</a>
-                    <a href="#" class="stores__item footer__link">Tokio</a>
-                </div>
+            <div class="pay-system__wrap">
+                <h4 class="pay-system__title">We accept</h4>
+                <a href="#" class="pay-system__item pay-system__item-01"></a>
+                <a href="#" class="pay-system__item pay-system__item-02"></a>
+                <a href="#" class="pay-system__item pay-system__item-03"></a>
+                <a href="#" class="pay-system__item pay-system__item-04"></a>
+                <a href="#" class="pay-system__item pay-system__item-05"></a>
+                <a href="#" class="pay-system__item pay-system__item-06"></a>
+                <a href="#" class="pay-system__item pay-system__item-07"></a>
+                <a href="#" class="pay-system__item pay-system__item-08"></a>
+                <a href="#" class="pay-system__item pay-system__item-09"></a>
+                <a href="#" class="pay-system__item pay-system__item-10"></a>
+                <a href="#" class="pay-system__item pay-system__item-11"></a>
             </div>
-            <div class="footer__social-wrap">
-                <div class="social">
-                    <h3 class="social__title">Social</h3>
-                    <div class="social__items">
-                        <a href="#" class="social__item social__item-twitter social__item-twitter--bottom"></a>
-                        <a href="#" class="social__item social__item-pinterest social__item-pinterest--bottom"></a>
-                        <a href="#" class="social__item social__item-facebook social__item-facebook--bottom"></a>
-                        <a href="#" class="social__item social__item-google-plus"></a>
-                        <a href="#" class="social__item social__item-tumblr"></a>
-                        <a href="#" class="social__item social__item-vimeo"></a>
+        </div>
+        <div class="footer__content">
+            <div class="footer-wrap">
+                <div class="footer__menu-items">
+                    <div class="customer-service">
+                        <h3 class="customer-service__title">Customer Service</h3>
+                        <a href="#" class="customer-service__item footer__link">Contact</a>
+                        <a href="#" class="customer-service__item footer__link">FAQ</a>
+                        <a href="#" class="customer-service__item footer__link">Terms of payment</a>
+                        <a href="#" class="customer-service__item footer__link">Terms of sale</a>
+                        <a href="#" class="customer-service__item footer__link">Delivery terms and conditions</a>
+                        <a href="#" class="customer-service__item footer__link">Returns and Refunds</a>
+                    </div>
+                    <div class="information">
+                        <h3 class="information__title">Information</h3>
+                        <a href="#" class="information__item footer__link">Affiliate</a>
+                        <a href="#" class="information__item footer__link">Cookies</a>
+                        <a href="#" class="information__item footer__link">How to Shop</a>
+                        <a href="#" class="information__item footer__link">About Nelly</a>
+                        <a href="#" class="information__item footer__link">Investor relations</a>
+                    </div>
+                    <div class="campaigns">
+                        <h3 class="campaigns__title">Campaigns</h3>
+                        <a href="#" class="campaigns__item footer__link">Evening dresses</a>
+                        <a href="#" class="campaigns__item footer__link">Makeup</a>
+                        <a href="#" class="campaigns__item footer__link">Fashion forward</a>
+                        <a href="#" class="campaigns__item footer__link">training clothes</a>
+                        <a href="#" class="campaigns__item footer__link">Special Occasion Dresses</a>
+                    </div>
+                    <div class="stores">
+                        <h3 class="stores__title">Stores</h3>
+                        <a href="#" class="stores__item footer__link">Paris</a>
+                        <a href="#" class="stores__item footer__link">New York</a>
+                        <a href="#" class="stores__item footer__link">London</a>
+                        <a href="#" class="stores__item footer__link">Madrid</a>
+                        <a href="#" class="stores__item footer__link">Tokio</a>
                     </div>
                 </div>
-                <div class="secure secure--top"></div>
+                <div class="footer__social-wrap">
+                    <div class="social">
+                        <h3 class="social__title">Social</h3>
+                        <div class="social__items">
+                            <a href="#" class="social__item social__item-twitter social__item-twitter--bottom"></a>
+                            <a href="#" class="social__item social__item-pinterest social__item-pinterest--bottom"></a>
+                            <a href="#" class="social__item social__item-facebook social__item-facebook--bottom"></a>
+                            <a href="#" class="social__item social__item-google-plus"></a>
+                            <a href="#" class="social__item social__item-tumblr"></a>
+                            <a href="#" class="social__item social__item-vimeo"></a>
+                        </div>
+                    </div>
+                    <div class="secure secure--top"></div>
+                </div>
             </div>
         </div>
-        <div class="footer-navigation">
-            <div class="footer-nav">
-                <a href="#" class="footer-nav__item footer-nav__item--border">Privacy & Cookies</a>
-                <a href="#" class="footer-nav__item footer-nav__item--border">Terms & Conditions</a>
-                <a href="#" class="footer-nav__item footer-nav__item--border">Accessibility</a>
-                <a href="#" class="footer-nav__item footer-nav__item--border">Store Directory</a>
-                <a href="#" class="footer-nav__item">About Us</a>
-            </div>
-            <a href="#" class="burger burger--disabled">
-                <span class="burger-line burger-line--top"></span>
-                <span class="burger-line burger-line--disable"></span>
-                <span class="burger-line burger-line--bottom"></span>
-            </a>
+        <div class="footer__wrap footer__wrap--navigation">
+            <div class="footer-navigation">
+                <div class="footer-nav">
+                    <a href="#" class="footer-nav__item footer-nav__item--border">Privacy & Cookies</a>
+                    <a href="#" class="footer-nav__item footer-nav__item--border">Terms & Conditions</a>
+                    <a href="#" class="footer-nav__item footer-nav__item--border">Accessibility</a>
+                    <a href="#" class="footer-nav__item footer-nav__item--border">Store Directory</a>
+                    <a href="#" class="footer-nav__item">About Us</a>
+                </div>
+                <a href="#" class="burger burger--disabled">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </a>
 
-            <div class="copyright">© LookShop.com All Rights Reserved</div>
+                <div class="copyright">© LookShop.com All Rights Reserved</div>
+            </div>
         </div>
     </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="plugins/slick/slick.min.js"></script>
+    <script src="plugins/slick/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
