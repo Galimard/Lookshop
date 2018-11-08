@@ -822,9 +822,13 @@ html, body {
 .subscribe {
     background-color:  #ededed;
 }
+
 .subscribe__email {
     position: relative;
+    display: flex;
+    align-items: center;
 }
+
 .subscribe__height {
     height: 55px;
 }
@@ -900,7 +904,7 @@ html, body {
     transition: opacity 0.5s;
 }
 
-.subscribe__input:hover, .subscribe__btn:hover {
+.subscribe__btn:hover {
     cursor: pointer;
 }
 
@@ -922,6 +926,7 @@ html, body {
     display: block;
     width: 55px;
     height: 55px;
+    border-bottom: 2px solid transparent;
 }
 
 .socials__facebook {
@@ -938,11 +943,7 @@ html, body {
 
 .socials__icon:hover,
 .socials__icon:active {
-    -webkit-transform: translateY(-3px);
-    -moz-transform: translateY(-3px);
-    -ms-transform: translateY(-3px);
-    -o-transform: translateY(-3px);
-    transform: translateY(-3px);
+    border-bottom: 2px solid #fd926d;
 }
 /*Адаптив для блока subscribe*/
 @media all and (max-width: 970px) {
@@ -2090,6 +2091,22 @@ html, body {
     color: #8d8d8d;
     font-size: 0.9rem;
     line-height: 18px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 /*Адаптив для блока footer-navigation*/
 @media all and (max-width: 970px) {
