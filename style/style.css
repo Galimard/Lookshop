@@ -1528,6 +1528,17 @@ html, body {
     justify-content: space-between;
     align-items: center;
     background-color: #f7f7f7;
+    position: relative;
+}
+.product-item--sale {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    background: url("../img/sale.jpg") center no-repeat;
+    width: 50px;
+    height: 50px;
+    z-index: 100;
 }
 .product-item__link-img {
     display: block;
